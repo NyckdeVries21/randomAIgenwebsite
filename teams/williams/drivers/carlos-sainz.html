@@ -4,18 +4,28 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Carlos Sainz Jr. — Williams</title>
-    <link rel="stylesheet" href="../../../css/styles.css">
+    <script>
+      (function(){
+        var parts = location.pathname.split('/').filter(Boolean);
+        var base = '';
+        if(location.hostname.endsWith('github.io') && parts.length>0) base = '/' + parts[0] + '/';
+        var head = document.getElementsByTagName('head')[0];
+        var baseEl = document.createElement('base'); baseEl.href = base || '/';
+        head.insertBefore(baseEl, head.firstChild);
+      })();
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <header class="site-header"><div class="container header-inner"><a class="brand" href="../../../index.html"><img src="../../../assets/logo.svg" alt="F1 logo"/></a></div></header>
+    <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><img src="assets/logo.svg" alt="F1 logo"/></a></div></header>
     <main class="container section">
       <h1>Carlos Sainz Jr.</h1>
       <p>Team: Atlassian Williams F1 Team</p>
       <p>Nationaliteit: Spain</p>
       <div id="driverStats" data-driver="carlos-sainz"></div>
-      <p><a href="../index.html">Terug naar team</a> — <a href="../../../index.html">Start</a></p>
+      <p><a href="teams/williams/index.html">Terug naar team</a> — <a href="index.html">Start</a></p>
     </main>
     <footer class="site-footer"><div class="container">© F1 Fansite</div></footer>
-    <script src="../../../js/app.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
