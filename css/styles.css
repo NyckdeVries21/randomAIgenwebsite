@@ -1,0 +1,40 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#94a3b8;
+  --accent:#e11d48;
+  --glass: rgba(255,255,255,0.03);
+  --container:1200px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  background:linear-gradient(180deg,#071025 0%, #09131c 100%);
+  color:#e6eef8;
+  -webkit-font-smoothing:antialiased;
+}
+.container{max-width:var(--container);margin:0 auto;padding:1rem}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand img{height:42px}
+.nav-toggle{display:none;background:transparent;border:0;color:var(--muted);font-size:22px}
+.main-nav a{color:var(--muted);text-decoration:none;margin-left:1rem}
+.site-header{backdrop-filter:blur(6px);background:linear-gradient(180deg,rgba(0,0,0,0.2),transparent);padding:.75rem 0}
+.hero{padding:4rem 0;text-align:center}
+.hero h1{font-size:2rem;margin:0 0 .5rem;color:#fff}
+.section{padding:2rem 0}
+.section-header{display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.section-header input{padding:.5rem .75rem;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:var(--glass);color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;margin-top:1rem}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:1rem;border-radius:8px;border:1px solid rgba(255,255,255,0.03)}
+.card h3{margin:.1rem 0 .5rem}
+.calendar{width:100%;border-collapse:collapse;margin-top:1rem}
+.calendar th,.calendar td{padding:.6rem;border-bottom:1px solid rgba(255,255,255,0.03);text-align:left;color:var(--muted)}
+.site-footer{padding:1.5rem 0;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02);margin-top:2rem}
+
+@media (max-width:800px){
+  .main-nav{display:none;position:fixed;top:60px;right:12px;background:#071627;padding:12px;border-radius:8px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+  .nav-toggle{display:inline-block}
+  .main-nav a{display:block;margin:.5rem 0}
+}

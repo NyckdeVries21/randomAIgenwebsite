@@ -1,0 +1,29 @@
+{
+  "season": 2026,
+  "races": [
+    {"round":1,"date":"2026-03-08","name":"Australian Grand Prix","country":"Australia","circuit":"Albert Park Circuit","city":"Melbourne"},
+    {"round":2,"date":"2026-03-15","name":"Chinese Grand Prix","country":"China","circuit":"Shanghai International Circuit","city":"Shanghai"},
+    {"round":3,"date":"2026-03-29","name":"Japanese Grand Prix","country":"Japan","circuit":"Suzuka Circuit","city":"Suzuka"},
+    {"round":4,"date":"2026-04-12","name":"Bahrain Grand Prix","country":"Bahrain","circuit":"Bahrain International Circuit","city":"Sakhir"},
+    {"round":5,"date":"2026-04-19","name":"Saudi Arabian Grand Prix","country":"Saudi Arabia","circuit":"Jeddah Corniche Circuit","city":"Jeddah"},
+    {"round":6,"date":"2026-05-03","name":"Miami Grand Prix","country":"United States","circuit":"Miami International Autodrome","city":"Miami Gardens, Florida"},
+    {"round":7,"date":"2026-05-24","name":"Canadian Grand Prix","country":"Canada","circuit":"Circuit Gilles Villeneuve","city":"Montreal"},
+    {"round":8,"date":"2026-06-07","name":"Monaco Grand Prix","country":"Monaco","circuit":"Circuit de Monaco","city":"Monaco"},
+    {"round":9,"date":"2026-06-14","name":"Barcelona-Catalunya Grand Prix","country":"Spain","circuit":"Circuit de Barcelona-Catalunya","city":"Montmeló"},
+    {"round":10,"date":"2026-06-28","name":"Austrian Grand Prix","country":"Austria","circuit":"Red Bull Ring","city":"Spielberg"},
+    {"round":11,"date":"2026-07-05","name":"British Grand Prix","country":"United Kingdom","circuit":"Silverstone Circuit","city":"Silverstone"},
+    {"round":12,"date":"2026-07-19","name":"Belgian Grand Prix","country":"Belgium","circuit":"Circuit de Spa-Francorchamps","city":"Stavelot"},
+    {"round":13,"date":"2026-07-26","name":"Hungarian Grand Prix","country":"Hungary","circuit":"Hungaroring","city":"Mogyoród"},
+    {"round":14,"date":"2026-08-23","name":"Dutch Grand Prix","country":"Netherlands","circuit":"Circuit Zandvoort","city":"Zandvoort"},
+    {"round":15,"date":"2026-09-06","name":"Italian Grand Prix","country":"Italy","circuit":"Monza Circuit","city":"Monza"},
+    {"round":16,"date":"2026-09-13","name":"Spanish Grand Prix","country":"Spain","circuit":"Madring (Madrid street circuit)","city":"Madrid"},
+    {"round":17,"date":"2026-09-26","name":"Azerbaijan Grand Prix","country":"Azerbaijan","circuit":"Baku City Circuit","city":"Baku"},
+    {"round":18,"date":"2026-10-11","name":"Singapore Grand Prix","country":"Singapore","circuit":"Marina Bay Street Circuit","city":"Singapore"},
+    {"round":19,"date":"2026-10-25","name":"United States Grand Prix","country":"United States","circuit":"Circuit of the Americas","city":"Austin, Texas"},
+    {"round":20,"date":"2026-11-01","name":"Mexico City Grand Prix","country":"Mexico","circuit":"Autódromo Hermanos Rodríguez","city":"Mexico City"},
+    {"round":21,"date":"2026-11-08","name":"São Paulo Grand Prix","country":"Brazil","circuit":"Interlagos Circuit","city":"São Paulo"},
+    {"round":22,"date":"2026-11-21","name":"Las Vegas Grand Prix","country":"United States","circuit":"Las Vegas Strip Circuit","city":"Paradise, Nevada"},
+    {"round":23,"date":"2026-11-29","name":"Qatar Grand Prix","country":"Qatar","circuit":"Lusail International Circuit","city":"Lusail"},
+    {"round":24,"date":"2026-12-06","name":"Abu Dhabi Grand Prix","country":"United Arab Emirates","circuit":"Yas Marina Circuit","city":"Abu Dhabi"}
+  ]
+}

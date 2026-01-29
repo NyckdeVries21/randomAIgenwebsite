@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>F1 Fansite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home"><img src="assets/logo.svg" alt="F1 logo"/></a>
+        <button id="navToggle" class="nav-toggle" aria-label="Open navigation">☰</button>
+        <nav id="mainNav" class="main-nav">
+          <a href="#home">Home</a>
+          <a href="#drivers">Rijders</a>
+          <a href="#teams">Teams</a>
+          <a href="#calendar">Kalender</a>
+          <a href="#about">Over</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <h1>Welkom bij de F1 Fansite</h1>
+          <p>Laatste nieuws, rijdersprofielen en de racekalender — compact en snel.</p>
+        </div>
+      </section>
+
+      <section id="drivers" class="container section">
+        <div class="section-header">
+          <h2>Top rijders</h2>
+          <input id="driverSearch" placeholder="Zoek rijder (bv. Verstappen)" />
+        </div>
+        <div id="driversGrid" class="grid">
+          <!-- Drivers will be rendered here from data/entries-2026.json -->
+        </div>
+      </section>
+
+      <section id="teams" class="container section">
+        <h2>Teams</h2>
+        <div id="teamsGrid" class="grid">
+          <!-- Teams will be rendered here from data/entries-2026.json -->
+        </div>
+      </section>
+
+      <section id="calendar" class="container section">
+        <h2>Kalender 2026</h2>
+        <p class="muted">Laadt lokale 2026-kalender...</p>
+        <table class="calendar">
+          <thead>
+            <tr><th>Datum</th><th>GP</th><th>Locatie</th></tr>
+          </thead>
+          <tbody id="calendarBody">
+            <tr><td colspan="3">Bezig met laden…</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="about" class="container section small">
+        <h2>Over deze site</h2>
+        <p>Een minimale, statische fansite als startpunt. Wil je live data, dan kunnen we een API-koppeling toevoegen.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© F1 Fansite — gemaakt voor jou</p>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
