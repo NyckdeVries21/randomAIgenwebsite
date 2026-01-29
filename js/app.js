@@ -140,16 +140,25 @@ document.addEventListener('DOMContentLoaded', ()=>{
       // Top 5 drivers by allTime.points
       const topDriversEl = document.getElementById('topDrivers');
       if(topDriversEl){
-        const drivers = Object.entries(stats.driverStats).map(([slug, d])=>({slug, name: slug.replace(/-/g,' '), points: d.allTime.points}));
+        const drivers = Object.entries(stats.driverStats).map(([slug, d])=>({slug, name: slug.replace(/-/g,' '), points: d.allTime && d.allTime.points ? d.allTime.points : 0}));
         drivers.sort((a,b)=>b.points-a.points);
-        drivers.slice(0,5).forEach(d=>{
-          const li = document.createElement('li');
-          const driverSlug = d.slug;
-          // try to map to real display name by searching entries
-          let display = d.slug.split('-').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(' ');
-          // try to find nicer name from entries
-          try{fetch(sitePath('/data/entries-2026.json')).then(r=>r.json()).then(entries=>{entries.teams.forEach(t=>t.drivers.forEach(dr=>{if(dr.name.toLowerCase().replace(/[^a-z0-9]+/g,'-')===driverSlug) display=dr.name}));li.innerHTML=`<a href="${sitePath(`/teams/${driverSlug}/drivers/${driverSlug}.html`)}">${display}</a> — ${d.points} p`;});}catch(e){li.textContent=`${display} — ${d.points} p`}
-          topDriversEl.appendChild(li);
+        // fetch entries once to map nicer display names and team slugs
+        fetch(sitePath('/data/entries-2026.json')).then(r=>r.ok? r.json(): Promise.resolve(null)).then(entries=>{
+          const nameMap = {};
+          if(entries){
+            entries.teams.forEach(t=>{ t.drivers.forEach(dr=>{ const s = dr.name.toLowerCase().replace(/[^a-z0-9]+/g,'-'); nameMap[s] = {display: dr.name, teamSlug: t.slug || t.name.toLowerCase().replace(/[^a-z0-9]+/g,'-')}; }); });
+          }
+          drivers.slice(0,5).forEach(d=>{
+            const li = document.createElement('li');
+            const driverSlug = d.slug;
+            let display = d.slug.split('-').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(' ');
+            const map = nameMap[driverSlug];
+            if(map){ display = map.display; const teamSlug = map.teamSlug; li.innerHTML = `<a href="${sitePath(`/teams/${teamSlug}/drivers/${driverSlug}.html`)}">${display}</a> — ${d.points} p`; }
+            else { li.textContent = `${display} — ${d.points} p`; }
+            topDriversEl.appendChild(li);
+          });
+        }).catch(()=>{
+          drivers.slice(0,5).forEach(d=>{ const li=document.createElement('li'); const display = d.slug.split('-').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(' '); li.textContent = `${display} — ${d.points} p`; topDriversEl.appendChild(li); });
         });
       }
 
@@ -228,8 +237,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
           });
           teamSeasonsEl.appendChild(btn);
         });
-        // show default season (last in seasons array) if available
-        const defaultBtn = teamSeasonsEl.querySelector('button:last-child');
+        // show default season: prefer 2026 if available, otherwise last in seasons array
+        let defaultBtn = Array.from(teamSeasonsEl.querySelectorAll('button')).find(b=>b.textContent && b.textContent.includes('2026'));
+        if(!defaultBtn) defaultBtn = teamSeasonsEl.querySelector('button:last-child');
         if(defaultBtn) defaultBtn.click();
       }
 
@@ -290,8 +300,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
         f1All.addEventListener('click', ()=>render('f1','all'));
         controls.appendChild(f1All);
 
-        // F1 per-season buttons
-        seasons.forEach(s=>{ const b=document.createElement('button'); b.textContent = `F1 ${s}`; b.addEventListener('click', ()=>render('f1','season',s)); controls.appendChild(b); });
+        // F1 per-season buttons: only for seasons where driver has F1 data
+        const f1Seasons = dsourced && dsourced.bySeason ? Object.keys(dsourced.bySeason).sort((a,b)=>b-a) : [];
+        f1Seasons.forEach(s=>{ const b=document.createElement('button'); b.textContent = `F1 ${s}`; b.addEventListener('click', ()=>render('f1','season',s)); controls.appendChild(b); });
 
         // Add feeder series buttons if present in stats
         if(dsourced && dsourced.feeder){
@@ -299,10 +310,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
             const allBtn = document.createElement('button'); allBtn.textContent = `${fs.toUpperCase()} Carrière`;
             allBtn.addEventListener('click', ()=>render(fs,'all'));
             controls.appendChild(allBtn);
-            // if feeder has bySeason entries, add season buttons too
-            const hasSeason = dsourced.feeder[fs].bySeason && Object.keys(dsourced.feeder[fs].bySeason).length>0;
-            if(hasSeason){
-              seasons.forEach(s=>{ const b=document.createElement('button'); b.textContent = `${fs.toUpperCase()} ${s}`; b.addEventListener('click', ()=>render(fs,'season',s)); controls.appendChild(b); });
+            // if feeder has bySeason entries, add season buttons only for seasons present
+            const feederSeasons = dsourced.feeder[fs].bySeason ? Object.keys(dsourced.feeder[fs].bySeason).sort((a,b)=>b-a) : [];
+            if(feederSeasons.length>0){
+              feederSeasons.forEach(s=>{ const b=document.createElement('button'); b.textContent = `${fs.toUpperCase()} ${s}`; b.addEventListener('click', ()=>render(fs,'season',s)); controls.appendChild(b); });
             }
           });
         }
@@ -314,5 +325,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     }).catch(err=>{
       console.error('Stats load error', err);
+      const teamStatsEl = document.getElementById('teamStats');
+      const driverStatsEl = document.getElementById('driverStats');
+      const msg = 'Kon statistieken niet laden. Start een lokale server of bekijk de site via GitHub Pages.';
+      if(teamStatsEl) teamStatsEl.innerHTML = `<p class="muted">${msg}</p>`;
+      if(driverStatsEl) driverStatsEl.innerHTML = `<p class="muted">${msg}</p>`;
+      const topDriversEl = document.getElementById('topDrivers');
+      const topTeamsEl = document.getElementById('topTeams');
+      if(topDriversEl) topDriversEl.innerHTML = '<li>Kon stats niet laden.</li>';
+      if(topTeamsEl) topTeamsEl.innerHTML = '<li>Kon stats niet laden.</li>';
     });
 });

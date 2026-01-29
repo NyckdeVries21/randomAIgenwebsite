@@ -1,34 +1,156 @@
 {
-  "seasons": [2020,2021,2022,2023,2024,2025,2026],
-  "driverStats": {
-    "max-verstappen": {"bySeason": {"2020": {"team":"Red Bull","points":214,"wins":2,"podiums":6,"poles":3,"position":3},"2021": {"team":"Red Bull","points":395,"wins":10,"podiums":12,"poles":8,"position":1},"2022":{"team":"Red Bull","points":454,"wins":15,"podiums":17,"poles":12,"position":1},"2023":{"team":"Oracle Red Bull","points":430,"wins":14,"podiums":15,"poles":10,"position":1},"2024":{"team":"Oracle Red Bull","points":380,"wins":9,"podiums":12,"poles":6,"position":1},"2025":{"team":"Oracle Red Bull","points":410,"wins":12,"podiums":14,"poles":9,"position":1},"2026":{"team":"Oracle Red Bull","points":420,"wins":11,"podiums":13,"poles":7,"position":1}},"allTime": {"points":2803,"wins":63,"podiums":120}},
-    "lewis-hamilton": {"bySeason": {"2020": {"team":"Mercedes","points":195,"wins":3,"podiums":7,"poles":4,"position":2},"2021": {"team":"Mercedes","points":387,"wins":8,"podiums":11,"poles":6,"position":2},"2022":{"team":"Mercedes","points":240,"wins":3,"podiums":6,"poles":3,"position":3},"2023":{"team":"Mercedes","points":330,"wins":6,"podiums":10,"poles":5,"position":2},"2024":{"team":"Mercedes","points":365,"wins":7,"podiums":12,"poles":6,"position":2},"2025":{"team":"Mercedes","points":300,"wins":5,"podiums":9,"poles":4,"position":3},"2026":{"team":"Mercedes","points":350,"wins":6,"podiums":11,"poles":5,"position":2}},"allTime": {"points":3050,"wins":104,"podiums":185}},
-    "charles-leclerc": {"bySeason": {"2020": {"team":"Ferrari","points":98,"wins":0,"podiums":2,"poles":0,"position":8},"2021": {"team":"Ferrari","points":159,"wins":2,"podiums":4,"poles":1,"position":7},"2022":{"team":"Ferrari","points":318,"wins":3,"podiums":8,"poles":4,"position":3},"2023":{"team":"Ferrari","points":280,"wins":5,"podiums":9,"poles":6,"position":2},"2024":{"team":"Ferrari","points":305,"wins":6,"podiums":10,"poles":7,"position":2},"2025":{"team":"Ferrari","points":290,"wins":5,"podiums":9,"poles":5,"position":3},"2026":{"team":"Ferrari","points":335,"wins":7,"podiums":11,"poles":6,"position":2}},"allTime": {"points":1578,"wins":28,"podiums":58}},
-    "lando-norris": {"bySeason": {"2020": {"team":"McLaren","points":97,"wins":0,"podiums":1,"poles":0,"position":11},"2021": {"team":"McLaren","points":160,"wins":2,"podiums":5,"poles":1,"position":6},"2022":{"team":"McLaren","points":220,"wins":1,"podiums":6,"poles":2,"position":5},"2023":{"team":"McLaren","points":245,"wins":2,"podiums":7,"poles":3,"position":4},"2024":{"team":"McLaren","points":275,"wins":3,"podiums":8,"poles":4,"position":4},"2025":{"team":"McLaren","points":300,"wins":4,"podiums":9,"poles":5,"position":3},"2026":{"team":"McLaren","points":310,"wins":4,"podiums":10,"poles":4,"position":3}},"allTime": {"points":1607,"wins":12,"podiums":34}},
-    "george-russell": {"bySeason": {"2020": {"team":"Williams","points":62,"wins":0,"podiums":0,"poles":0,"position":15},"2021": {"team":"Mercedes","points":120,"wins":1,"podiums":3,"poles":1,"position":9},"2022":{"team":"Mercedes","points":200,"wins":2,"podiums":5,"poles":2,"position":6},"2023":{"team":"Mercedes","points":260,"wins":4,"podiums":8,"poles":3,"position":3},"2024":{"team":"Mercedes","points":290,"wins":6,"podiums":9,"poles":4,"position":2},"2025":{"team":"Mercedes","points":310,"wins":5,"podiums":10,"poles":4,"position":2},"2026":{"team":"Mercedes","points":305,"wins":4,"podiums":9,"poles":3,"position":3}},"allTime": {"points":1547,"wins":22,"podiums":45}},
-    "isack-hadjar": {"bySeason": {"2020": {"points":0,"wins":0},"2021": {"points":0,"wins":0},"2022":{"points":0,"wins":0},"2023":{"points":60,"wins":0},"2024":{"points":120,"wins":1},"2025":{"points":180,"wins":3},"2026":{"points":200,"wins":4}},"allTime": {"points":560,"wins":8,"podiums":15}},
-    "oscar-piastri": {"bySeason": {"2020": {"points":0,"wins":0},"2021": {"points":0,"wins":0},"2022":{"points":5,"wins":0},"2023":{"points":80,"wins":1},"2024":{"points":160,"wins":2},"2025":{"points":220,"wins":3},"2026":{"points":240,"wins":3}},"allTime": {"points":707,"wins":9,"podiums":20}},
-    "nico-hulkenberg": {"bySeason": {"2020":{"points":10,"wins":0},"2021":{"points":22,"wins":0},"2022":{"points":18,"wins":0},"2023":{"points":30,"wins":0},"2024":{"points":40,"wins":0},"2025":{"points":35,"wins":0},"2026":{"points":28,"wins":0}},"allTime": {"points":280,"wins":0,"podiums":1}},
-    "sergio-perez": {"bySeason": {"2020":{"points":125,"wins":1},"2021":{"points":190,"wins":3},"2022":{"points":150,"wins":2},"2023":{"points":200,"wins":4},"2024":{"points":220,"wins":5},"2025":{"points":210,"wins":3},"2026":{"points":195,"wins":2}},"allTime": {"points":1450,"wins":14,"podiums":50}},
-    "valtteri-bottas": {"bySeason": {"2020":{"points":125,"wins":1},"2021":{"points":110,"wins":0},"2022":{"points":60,"wins":0},"2023":{"points":45,"wins":0},"2024":{"points":30,"wins":0},"2025":{"points":20,"wins":0},"2026":{"points":15,"wins":0}},"allTime": {"points":980,"wins":10,"podiums":42}},
-    "esteban-ocon": {"bySeason": {"2020":{"points":62,"wins":0},"2021":{"points":74,"wins":0},"2022":{"points":95,"wins":0},"2023":{"points":110,"wins":1},"2024":{"points":120,"wins":1},"2025":{"points":130,"wins":1},"2026":{"points":120,"wins":1}},"allTime": {"points":711,"wins":4,"podiums":12}},
-    "oliver-bearman": {"bySeason": {"2026":{"points":10,"wins":0}},"allTime": {"points":10,"wins":0,"podiums":0},"feeder": {"f2": {"allTime": {"points":180,"wins":3,"podiums":7},"bySeason": {"2024": {"points":80,"wins":1},"2025": {"points":100,"wins":2}}},"f3": {"allTime": {"points":120,"wins":2,"podiums":5},"bySeason": {"2023": {"points":60,"wins":1},"2024": {"points":60,"wins":1}}}},
-    "liam-lawson": {"bySeason": {"2026":{"points":8,"wins":0}},"allTime": {"points":8,"wins":0,"podiums":0},"feeder": {"f2": {"allTime": {"points":140,"wins":2,"podiums":4},"bySeason": {"2024": {"points":60,"wins":1},"2025": {"points":80,"wins":1}}}},
-    "arvid-lindblad": {"bySeason": {"2026":{"points":6,"wins":0}},"allTime": {"points":6,"wins":0,"podiums":0},"feeder": {"f2": {"allTime": {"points":120,"wins":1,"podiums":3},"bySeason": {"2024": {"points":50,"wins":0},"2025": {"points":70,"wins":1}}}},
-    "kimi-antonelli": {"bySeason": {"2026":{"points":4,"wins":0}},"allTime": {"points":4,"wins":0,"podiums":0},"feeder": {"f2": {"allTime": {"points":160,"wins":2,"podiums":5},"bySeason": {"2024": {"points":70,"wins":1},"2025": {"points":90,"wins":1}}},"f3": {"allTime": {"points":110,"wins":1,"podiums":3},"bySeason": {"2023": {"points":50,"wins":1},"2024": {"points":60,"wins":0}}}},
-    "gabriel-bortoleto": {"bySeason": {"2026":{"points":0,"wins":0}},"allTime": {"points":0,"wins":0,"podiums":0},"feeder": {"f2": {"allTime": {"points":90,"wins":1,"podiums":2},"bySeason": {"2025": {"points":90,"wins":1}}},"f3": {"allTime": {"points":70,"wins":0,"podiums":1},"bySeason": {"2024": {"points":70,"wins":0}}}},
-    "fernando-alonso": {"bySeason": {"2020":{"points":0,"wins":0},"2021":{"points":0,"wins":0},"2022":{"points":30,"wins":0},"2023":{"points":110,"wins":1},"2024":{"points":120,"wins":1},"2025":{"points":100,"wins":0},"2026":{"points":90,"wins":0}},"allTime": {"points":2050,"wins":32,"podiums":97}},
-    "lance-stroll": {"bySeason": {"2020":{"points":20,"wins":0},"2021":{"points":34,"wins":0},"2022":{"points":45,"wins":0},"2023":{"points":60,"wins":0},"2024":{"points":40,"wins":0},"2025":{"points":30,"wins":0},"2026":{"points":25,"wins":0}},"allTime": {"points":300,"wins":0,"podiums":2}},
-    "alexander-albon": {"bySeason": {"2020":{"points":5,"wins":0},"2021":{"points":45,"wins":0},"2022":{"points":70,"wins":0},"2023":{"points":60,"wins":0},"2024":{"points":30,"wins":0},"2025":{"points":20,"wins":0},"2026":{"points":15,"wins":0}},"allTime": {"points":245,"wins":0,"podiums":1}},
-    "carlos-sainz": {"bySeason": {"2020":{"points":105,"wins":0},"2021":{"points":150,"wins":1},"2022":{"points":180,"wins":1},"2023":{"points":160,"wins":1},"2024":{"points":140,"wins":0},"2025":{"points":120,"wins":0},"2026":{"points":110,"wins":0}},"allTime": {"points":1300,"wins":5,"podiums":32}},
-    "pierre-gasly": {"bySeason": {"2020":{"points":75,"wins":0},"2021":{"points":90,"wins":0},"2022":{"points":100,"wins":0},"2023":{"points":95,"wins":0},"2024":{"points":80,"wins":0},"2025":{"points":70,"wins":0},"2026":{"points":60,"wins":0}},"allTime": {"points":670,"wins":1,"podiums":10}},
-    "franco-colapinto": {"bySeason": {"2026":{"points":0,"wins":0}},"allTime": {"points":0,"wins":0,"podiums":0},"feeder": {"f2": {"allTime": {"points":110,"wins":1,"podiums":3},"bySeason": {"2024": {"points":50,"wins":0},"2025": {"points":60,"wins":1}}},"f3": {"allTime": {"points":85,"wins":0,"podiums":2},"bySeason": {"2023": {"points":40,"wins":0},"2024": {"points":45,"wins":0}}}}
-  },
-  "teamStats": {
-    "oracle-red-bull": {"bySeason": {"2020":{"points":300,"wins":13},"2021":{"points":420,"wins":15},"2022":{"points":550,"wins":20},"2023":{"points":520,"wins":18},"2024":{"points":480,"wins":12},"2025":{"points":500,"wins":14},"2026":{"points":520,"wins":16}},"allTime":{"points":3260,"wins":108}},
-    "scuderia-ferrari": {"bySeason": {"2020":{"points":200,"wins":2},"2021":{"points":308,"wins":6},"2022":{"points":350,"wins":7},"2023":{"points":360,"wins":9},"2024":{"points":370,"wins":10},"2025":{"points":390,"wins":11},"2026":{"points":410,"wins":12}},"allTime":{"points":2388,"wins":57}},
-    "mercedes-amg": {"bySeason": {"2020":{"points":320,"wins":11},"2021":{"points":420,"wins":14},"2022":{"points":400,"wins":12},"2023":{"points":440,"wins":13},"2024":{"points":420,"wins":10},"2025":{"points":430,"wins":11},"2026":{"points":395,"wins":9}},"allTime":{"points":3495,"wins":120}},
-    "mclaren-mastercard": {"bySeason": {"2020":{"points":200,"wins":1},"2021":{"points":280,"wins":4},"2022":{"points":300,"wins":5},"2023":{"points":320,"wins":6},"2024":{"points":330,"wins":7},"2025":{"points":340,"wins":6},"2026":{"points":350,"wins":7}},"allTime":{"points":2220,"wins":36}},
-    "audi-revolut": {"bySeason": {"2020":{"points":0,"wins":0},"2021":{"points":0,"wins":0},"2022":{"points":0,"wins":0},"2023":{"points":60,"wins":0},"2024":{"points":120,"wins":1},"2025":{"points":210,"wins":3},"2026":{"points":260,"wins":4}},"allTime":{"points":650,"wins":8}}
+    "seasons": [2020, 2021, 2022, 2023, 2024, 2025, 2026],
+    "driverStats": {
+      "max-verstappen": {
+        "bySeason": {
+          "2020": {"team": "Red Bull", "points": 214, "wins": 2, "podiums": 6, "poles": 3, "position": 3},
+          "2021": {"team": "Red Bull", "points": 395, "wins": 10, "podiums": 12, "poles": 8, "position": 1},
+          "2022": {"team": "Red Bull", "points": 454, "wins": 15, "podiums": 17, "poles": 12, "position": 1},
+          "2023": {"team": "Oracle Red Bull", "points": 430, "wins": 14, "podiums": 15, "poles": 10, "position": 1},
+          "2024": {"team": "Oracle Red Bull", "points": 380, "wins": 9, "podiums": 12, "poles": 6, "position": 1},
+          "2025": {"team": "Oracle Red Bull", "points": 410, "wins": 12, "podiums": 14, "poles": 9, "position": 1},
+          "2026": {"team": "Oracle Red Bull", "points": 0, "wins": 0, "podiums": 0, "poles": 0, "position": null, "fastestLaps": 0}
+        },
+        "allTime": {"points": 2803, "wins": 63, "podiums": 120}
+      },
+      "lewis-hamilton": {
+        "bySeason": {
+          "2020": {"team": "Mercedes", "points": 195, "wins": 3, "podiums": 7, "poles": 4, "position": 2},
+          "2021": {"team": "Mercedes", "points": 387, "wins": 8, "podiums": 11, "poles": 6, "position": 2},
+          "2022": {"team": "Mercedes", "points": 240, "wins": 3, "podiums": 6, "poles": 3, "position": 3},
+          "2023": {"team": "Mercedes", "points": 330, "wins": 6, "podiums": 10, "poles": 5, "position": 2},
+          "2024": {"team": "Mercedes", "points": 365, "wins": 7, "podiums": 12, "poles": 6, "position": 2},
+          "2025": {"team": "Mercedes", "points": 300, "wins": 5, "podiums": 9, "poles": 4, "position": 3},
+          "2026": {"team": "Mercedes", "points": 0, "wins": 0, "podiums": 0, "poles": 0, "position": null, "fastestLaps": 0}
+        },
+        "allTime": {"points": 3050, "wins": 104, "podiums": 185}
+      },
+      "charles-leclerc": {
+        "bySeason": {
+          "2020": {"team": "Ferrari", "points": 98, "wins": 0, "podiums": 2, "poles": 0, "position": 8},
+          "2021": {"team": "Ferrari", "points": 159, "wins": 2, "podiums": 4, "poles": 1, "position": 7},
+          "2022": {"team": "Ferrari", "points": 318, "wins": 3, "podiums": 8, "poles": 4, "position": 3},
+          "2023": {"team": "Ferrari", "points": 280, "wins": 5, "podiums": 9, "poles": 6, "position": 2},
+          "2024": {"team": "Ferrari", "points": 305, "wins": 6, "podiums": 10, "poles": 7, "position": 2},
+          "2025": {"team": "Ferrari", "points": 290, "wins": 5, "podiums": 9, "poles": 5, "position": 3},
+          "2026": {"team": "Ferrari", "points": 0, "wins": 0, "podiums": 0, "poles": 0, "position": null, "fastestLaps": 0}
+        },
+        "allTime": {"points": 1578, "wins": 28, "podiums": 58}
+      },
+      "lando-norris": {
+        "bySeason": {
+          "2020": {"team": "McLaren", "points": 97, "wins": 0, "podiums": 1, "poles": 0, "position": 11},
+          "2021": {"team": "McLaren", "points": 160, "wins": 2, "podiums": 5, "poles": 1, "position": 6},
+          "2022": {"team": "McLaren", "points": 220, "wins": 1, "podiums": 6, "poles": 2, "position": 5},
+          "2023": {"team": "McLaren", "points": 245, "wins": 2, "podiums": 7, "poles": 3, "position": 4},
+          "2024": {"team": "McLaren", "points": 275, "wins": 3, "podiums": 8, "poles": 4, "position": 4},
+          "2025": {"team": "McLaren", "points": 300, "wins": 4, "podiums": 9, "poles": 5, "position": 3},
+          "2026": {"team": "McLaren", "points": 0, "wins": 0, "podiums": 0, "poles": 0, "position": null, "fastestLaps": 0}
+        },
+        "allTime": {"points": 1607, "wins": 12, "podiums": 34}
+      },
+      "george-russell": {
+        "bySeason": {
+          "2020": {"team": "Williams", "points": 62, "wins": 0, "podiums": 0, "poles": 0, "position": 15},
+          "2021": {"team": "Mercedes", "points": 120, "wins": 1, "podiums": 3, "poles": 1, "position": 9},
+          "2022": {"team": "Mercedes", "points": 200, "wins": 2, "podiums": 5, "poles": 2, "position": 6},
+          "2023": {"team": "Mercedes", "points": 260, "wins": 4, "podiums": 8, "poles": 3, "position": 3},
+          "2024": {"team": "Mercedes", "points": 290, "wins": 6, "podiums": 9, "poles": 4, "position": 2},
+          "2025": {"team": "Mercedes", "points": 310, "wins": 5, "podiums": 10, "poles": 4, "position": 2},
+          "2026": {"team": "Mercedes", "points": 0, "wins": 0, "podiums": 0, "poles": 0, "position": null, "fastestLaps": 0}
+        },
+        "allTime": {"points": 1547, "wins": 22, "podiums": 45}
+      },
+      "isack-hadjar": {
+        "bySeason": {"2020": {"points": 0, "wins": 0}, "2021": {"points": 0, "wins": 0}, "2022": {"points": 0, "wins": 0}, "2023": {"points": 60, "wins": 0}, "2024": {"points": 120, "wins": 1}, "2025": {"points": 180, "wins": 3}, "2026": {"points": 0, "wins": 0}},
+        "allTime": {"points": 560, "wins": 8, "podiums": 15}
+      },
+      "oscar-piastri": {
+        "bySeason": {"2020": {"points": 0, "wins": 0}, "2021": {"points": 0, "wins": 0}, "2022": {"points": 5, "wins": 0}, "2023": {"points": 80, "wins": 1}, "2024": {"points": 160, "wins": 2}, "2025": {"points": 220, "wins": 3}, "2026": {"points": 0, "wins": 0}},
+        "allTime": {"points": 707, "wins": 9, "podiums": 20}
+      },
+      "nico-hulkenberg": {
+        "bySeason": {"2020": {"points": 10, "wins": 0}, "2021": {"points": 22, "wins": 0}, "2022": {"points": 18, "wins": 0}, "2023": {"points": 30, "wins": 0}, "2024": {"points": 40, "wins": 0}, "2025": {"points": 35, "wins": 0}, "2026": {"points": 0, "wins": 0}},
+        "allTime": {"points": 280, "wins": 0, "podiums": 1}
+      },
+      "sergio-perez": {
+        "bySeason": {"2020": {"points": 125, "wins": 1}, "2021": {"points": 190, "wins": 3}, "2022": {"points": 150, "wins": 2}, "2023": {"points": 200, "wins": 4}, "2024": {"points": 220, "wins": 5}, "2025": {"points": 210, "wins": 3}, "2026": {"points": 0, "wins": 0}},
+        "allTime": {"points": 1450, "wins": 14, "podiums": 50}
+      },
+      "valtteri-bottas": {
+        "bySeason": {"2020": {"points": 125, "wins": 1}, "2021": {"points": 110, "wins": 0}, "2022": {"points": 60, "wins": 0}, "2023": {"points": 45, "wins": 0}, "2024": {"points": 30, "wins": 0}, "2025": {"points": 20, "wins": 0}, "2026": {"points": 0, "wins": 0}},
+        "allTime": {"points": 980, "wins": 10, "podiums": 42}
+      },
+      "esteban-ocon": {
+        "bySeason": {"2020": {"points": 62, "wins": 0}, "2021": {"points": 74, "wins": 0}, "2022": {"points": 95, "wins": 0}, "2023": {"points": 110, "wins": 1}, "2024": {"points": 120, "wins": 1}, "2025": {"points": 130, "wins": 1}, "2026": {"points": 0, "wins": 0}},
+        "allTime": {"points": 711, "wins": 4, "podiums": 12}
+      },
+      "oliver-bearman": {
+        "bySeason": {"2026": {"points": 0, "wins": 0}},
+        "allTime": {"points": 0, "wins": 0, "podiums": 0},
+        "feeder": {
+          "f2": {"allTime": {"points": 180, "wins": 3, "podiums": 7}, "bySeason": {"2024": {"points": 80, "wins": 1}, "2025": {"points": 100, "wins": 2}}},
+          "f3": {"allTime": {"points": 120, "wins": 2, "podiums": 5}, "bySeason": {"2023": {"points": 60, "wins": 1}, "2024": {"points": 60, "wins": 1}}}
+        }
+      },
+      "liam-lawson": {
+        "bySeason": {"2026": {"points": 0, "wins": 0}},
+        "allTime": {"points": 0, "wins": 0, "podiums": 0},
+        "feeder": {"f2": {"allTime": {"points": 140, "wins": 2, "podiums": 4}, "bySeason": {"2024": {"points": 60, "wins": 1}, "2025": {"points": 80, "wins": 1}}}
+      },
+      "arvid-lindblad": {
+        "bySeason": {"2026": {"points": 0, "wins": 0}},
+        "allTime": {"points": 0, "wins": 0, "podiums": 0},
+        "feeder": {"f2": {"allTime": {"points": 120, "wins": 1, "podiums": 3}, "bySeason": {"2024": {"points": 50, "wins": 0}, "2025": {"points": 70, "wins": 1}}}
+      },
+      "kimi-antonelli": {
+        "bySeason": {"2026": {"points": 0, "wins": 0}},
+        "allTime": {"points": 0, "wins": 0, "podiums": 0},
+        "feeder": {
+          "f2": {"allTime": {"points": 160, "wins": 2, "podiums": 5}, "bySeason": {"2024": {"points": 70, "wins": 1}, "2025": {"points": 90, "wins": 1}}},
+          "f3": {"allTime": {"points": 110, "wins": 1, "podiums": 3}, "bySeason": {"2023": {"points": 50, "wins": 1}, "2024": {"points": 60, "wins": 0}}}
+        }
+      },
+      "gabriel-bortoleto": {
+        "bySeason": {"2026": {"points": 0, "wins": 0}},
+        "allTime": {"points": 0, "wins": 0, "podiums": 0},
+        "feeder": {"f2": {"allTime": {"points": 90, "wins": 1, "podiums": 2}, "bySeason": {"2025": {"points": 90, "wins": 1}}},
+        "f3": {"allTime": {"points": 70, "wins": 0, "podiums": 1}, "bySeason": {"2024": {"points": 70, "wins": 0}}}
+      },
+      "fernando-alonso": {
+        "bySeason": {"2020": {"points": 0, "wins": 0}, "2021": {"points": 0, "wins": 0}, "2022": {"points": 30, "wins": 0}, "2023": {"points": 110, "wins": 1}, "2024": {"points": 120, "wins": 1}, "2025": {"points": 100, "wins": 0}, "2026": {"points": 0, "wins": 0}},
+        "allTime": {"points": 2050, "wins": 32, "podiums": 97}
+      },
+      "lance-stroll": {
+        "bySeason": {"2020": {"points": 20, "wins": 0}, "2021": {"points": 34, "wins": 0}, "2022": {"points": 45, "wins": 0}, "2023": {"points": 60, "wins": 0}, "2024": {"points": 40, "wins": 0}, "2025": {"points": 30, "wins": 0}, "2026": {"points": 0, "wins": 0}},
+        "allTime": {"points": 300, "wins": 0, "podiums": 2}
+      },
+      "alexander-albon": {
+        "bySeason": {"2020": {"points": 5, "wins": 0}, "2021": {"points": 45, "wins": 0}, "2022": {"points": 70, "wins": 0}, "2023": {"points": 60, "wins": 0}, "2024": {"points": 30, "wins": 0}, "2025": {"points": 20, "wins": 0}, "2026": {"points": 0, "wins": 0}},
+        "allTime": {"points": 245, "wins": 0, "podiums": 1}
+      },
+      "carlos-sainz": {
+        "bySeason": {"2020": {"points": 105, "wins": 0}, "2021": {"points": 150, "wins": 1}, "2022": {"points": 180, "wins": 1}, "2023": {"points": 160, "wins": 1}, "2024": {"points": 140, "wins": 0}, "2025": {"points": 120, "wins": 0}, "2026": {"points": 0, "wins": 0}},
+        "allTime": {"points": 1300, "wins": 5, "podiums": 32}
+      },
+      "pierre-gasly": {
+        "bySeason": {"2020": {"points": 75, "wins": 0}, "2021": {"points": 90, "wins": 0}, "2022": {"points": 100, "wins": 0}, "2023": {"points": 95, "wins": 0}, "2024": {"points": 80, "wins": 0}, "2025": {"points": 70, "wins": 0}, "2026": {"points": 0, "wins": 0}},
+        "allTime": {"points": 670, "wins": 1, "podiums": 10}
+      },
+      "franco-colapinto": {
+        "bySeason": {"2026": {"points": 0, "wins": 0}},
+        "allTime": {"points": 0, "wins": 0, "podiums": 0},
+        "feeder": {
+          "f2": {"allTime": {"points": 110, "wins": 1, "podiums": 3}, "bySeason": {"2024": {"points": 50, "wins": 0}, "2025": {"points": 60, "wins": 1}}},
+          "f3": {"allTime": {"points": 85, "wins": 0, "podiums": 2}, "bySeason": {"2023": {"points": 40, "wins": 0}, "2024": {"points": 45, "wins": 0}}}
+        }
+      }
+    },
+    "teamStats": {
+      "oracle-red-bull": {"bySeason": {"2020": {"points": 300, "wins": 13}, "2021": {"points": 420, "wins": 15}, "2022": {"points": 550, "wins": 20}, "2023": {"points": 520, "wins": 18}, "2024": {"points": 480, "wins": 12}, "2025": {"points": 500, "wins": 14}, "2026": {"points": 0, "wins": 0}}, "allTime": {"points": 3260, "wins": 108}},
+      "scuderia-ferrari": {"bySeason": {"2020": {"points": 200, "wins": 2}, "2021": {"points": 308, "wins": 6}, "2022": {"points": 350, "wins": 7}, "2023": {"points": 360, "wins": 9}, "2024": {"points": 370, "wins": 10}, "2025": {"points": 390, "wins": 11}, "2026": {"points": 0, "wins": 0}}, "allTime": {"points": 2388, "wins": 57}},
+      "mercedes-amg": {"bySeason": {"2020": {"points": 320, "wins": 11}, "2021": {"points": 420, "wins": 14}, "2022": {"points": 400, "wins": 12}, "2023": {"points": 440, "wins": 13}, "2024": {"points": 420, "wins": 10}, "2025": {"points": 430, "wins": 11}, "2026": {"points": 0, "wins": 0}}, "allTime": {"points": 3495, "wins": 120}},
+      "mclaren-mastercard": {"bySeason": {"2020": {"points": 200, "wins": 1}, "2021": {"points": 280, "wins": 4}, "2022": {"points": 300, "wins": 5}, "2023": {"points": 320, "wins": 6}, "2024": {"points": 330, "wins": 7}, "2025": {"points": 340, "wins": 6}, "2026": {"points": 0, "wins": 0}}, "allTime": {"points": 2220, "wins": 36}},
+      "audi-revolut": {"bySeason": {"2020": {"points": 0, "wins": 0}, "2021": {"points": 0, "wins": 0}, "2022": {"points": 0, "wins": 0}, "2023": {"points": 60, "wins": 0}, "2024": {"points": 120, "wins": 1}, "2025": {"points": 210, "wins": 3}, "2026": {"points": 0, "wins": 0}}, "allTime": {"points": 650, "wins": 8}}
+    }
   }
-}

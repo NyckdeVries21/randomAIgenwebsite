@@ -1,16 +1,16 @@
 {
   "season": 2026,
   "teams": [
-    {"name":"Oracle Red Bull Racing","slug":"oracle-red-bull","country":"Austria","drivers":[{"name":"Max Verstappen","nationality":"Netherlands"},{"name":"Isack Hadjar","nationality":"France"}]},
-    {"name":"Scuderia Ferrari HP","slug":"scuderia-ferrari","country":"Italy","drivers":[{"name":"Charles Leclerc","nationality":"Monaco"},{"name":"Lewis Hamilton","nationality":"United Kingdom"}]},
-    {"name":"Mercedes-AMG Petronas","slug":"mercedes-amg","country":"United Kingdom","drivers":[{"name":"George Russell","nationality":"United Kingdom"},{"name":"Kimi Antonelli","nationality":"Italy"}]},
-    {"name":"McLaren Mastercard","slug":"mclaren-mastercard","country":"United Kingdom","drivers":[{"name":"Lando Norris","nationality":"United Kingdom"},{"name":"Oscar Piastri","nationality":"Australia"}]},
-    {"name":"Audi Revolut F1 Team","slug":"audi-revolut","country":"Germany","drivers":[{"name":"Gabriel Bortoleto","nationality":"Brazil"},{"name":"Nico Hülkenberg","nationality":"Germany"}]},
-    {"name":"Cadillac Formula 1 Team","slug":"cadillac","country":"United States","drivers":[{"name":"Sergio Pérez","nationality":"Mexico"},{"name":"Valtteri Bottas","nationality":"Finland"}]},
-    {"name":"TGR Haas F1 Team","slug":"tgr-haas","country":"United States","drivers":[{"name":"Esteban Ocon","nationality":"France"},{"name":"Oliver Bearman","nationality":"United Kingdom"}]},
-    {"name":"Visa Cash App Racing Bulls","slug":"racing-bulls","country":"United Kingdom","drivers":[{"name":"Liam Lawson","nationality":"New Zealand"},{"name":"Arvid Lindblad","nationality":"United Kingdom"}]},
-    {"name":"Aston Martin Aramco","slug":"aston-martin","country":"United Kingdom","drivers":[{"name":"Fernando Alonso","nationality":"Spain"},{"name":"Lance Stroll","nationality":"Canada"}]},
-    {"name":"Atlassian Williams F1 Team","slug":"williams","country":"United Kingdom","drivers":[{"name":"Alexander Albon","nationality":"Thailand"},{"name":"Carlos Sainz Jr.","nationality":"Spain"}]},
-    {"name":"France BWT Alpine Formula One Team","slug":"alpine","country":"France","drivers":[{"name":"Pierre Gasly","nationality":"France"},{"name":"Franco Colapinto","nationality":"Argentina"}]}
+    {"name":"Oracle Red Bull Racing","slug":"oracle-red-bull","country":"Austria","drivers":[{"name":"Max Verstappen","nationality":"Netherlands","slug":"max-verstappen"},{"name":"Isack Hadjar","nationality":"France","slug":"isack-hadjar"}]},
+    {"name":"Scuderia Ferrari HP","slug":"scuderia-ferrari","country":"Italy","drivers":[{"name":"Charles Leclerc","nationality":"Monaco","slug":"charles-leclerc"},{"name":"Lewis Hamilton","nationality":"United Kingdom","slug":"lewis-hamilton"}]},
+    {"name":"Mercedes-AMG Petronas","slug":"mercedes-amg","country":"United Kingdom","drivers":[{"name":"George Russell","nationality":"United Kingdom","slug":"george-russell"},{"name":"Kimi Antonelli","nationality":"Italy","slug":"kimi-antonelli"}]},
+    {"name":"McLaren Mastercard","slug":"mclaren-mastercard","country":"United Kingdom","drivers":[{"name":"Lando Norris","nationality":"United Kingdom","slug":"lando-norris"},{"name":"Oscar Piastri","nationality":"Australia","slug":"oscar-piastri"}]},
+    {"name":"Audi Revolut F1 Team","slug":"audi-revolut","country":"Germany","drivers":[{"name":"Gabriel Bortoleto","nationality":"Brazil","slug":"gabriel-bortoleto"},{"name":"Nico Hülkenberg","nationality":"Germany","slug":"nico-hulkenberg"}]},
+    {"name":"Cadillac Formula 1 Team","slug":"cadillac","country":"United States","drivers":[{"name":"Sergio Pérez","nationality":"Mexico","slug":"sergio-perez"},{"name":"Valtteri Bottas","nationality":"Finland","slug":"valtteri-bottas"}]},
+    {"name":"TGR Haas F1 Team","slug":"tgr-haas","country":"United States","drivers":[{"name":"Esteban Ocon","nationality":"France","slug":"esteban-ocon"},{"name":"Oliver Bearman","nationality":"United Kingdom","slug":"oliver-bearman"}]},
+    {"name":"Visa Cash App Racing Bulls","slug":"racing-bulls","country":"United Kingdom","drivers":[{"name":"Liam Lawson","nationality":"New Zealand","slug":"liam-lawson"},{"name":"Arvid Lindblad","nationality":"United Kingdom","slug":"arvid-lindblad"}]},
+    {"name":"Aston Martin Aramco","slug":"aston-martin","country":"United Kingdom","drivers":[{"name":"Fernando Alonso","nationality":"Spain","slug":"fernando-alonso"},{"name":"Lance Stroll","nationality":"Canada","slug":"lance-stroll"}]},
+    {"name":"Atlassian Williams F1 Team","slug":"williams","country":"United Kingdom","drivers":[{"name":"Alexander Albon","nationality":"Thailand","slug":"alexander-albon"},{"name":"Carlos Sainz Jr.","nationality":"Spain","slug":"carlos-sainz"}]},
+    {"name":"France BWT Alpine Formula One Team","slug":"alpine","country":"France","drivers":[{"name":"Pierre Gasly","nationality":"France","slug":"pierre-gasly"},{"name":"Franco Colapinto","nationality":"Argentina","slug":"franco-colapinto"}]}
   ]
 }

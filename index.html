@@ -45,10 +45,19 @@
 
       <section id="drivers" class="container section">
         <div class="section-header">
-          <h2>Zoek een coureur</h2>
-          <input id="driverSearch" placeholder="Typ naam, druk Enter om te openen" />
+          <h2>Top rijders</h2>
+          <input id="driverSearch" placeholder="Zoek rijder (bv. Verstappen)" />
         </div>
-        <div id="searchMessage" class="muted">Typ een naam en druk Enter om naar de coureurspagina te gaan.</div>
+        <div id="driversGrid" class="grid">
+          <!-- Drivers will be rendered here from data/entries-2026.json -->
+        </div>
+      </section>
+
+      <section id="teams" class="container section">
+        <h2>Teams</h2>
+        <div id="teamsGrid" class="grid">
+          <!-- Teams will be rendered here from data/entries-2026.json -->
+        </div>
       </section>
 
       <section id="calendar" class="container section">
