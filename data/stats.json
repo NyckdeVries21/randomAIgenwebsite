@@ -96,12 +96,12 @@
       "liam-lawson": {
         "bySeason": {"2026": {"points": 0, "wins": 0}},
         "allTime": {"points": 0, "wins": 0, "podiums": 0},
-        "feeder": {"f2": {"allTime": {"points": 140, "wins": 2, "podiums": 4}, "bySeason": {"2024": {"points": 60, "wins": 1}, "2025": {"points": 80, "wins": 1}}}
+        "feeder": {"f2": {"allTime": {"points": 140, "wins": 2, "podiums": 4}, "bySeason": {"2024": {"points": 60, "wins": 1}, "2025": {"points": 80, "wins": 1}}}}
       },
       "arvid-lindblad": {
         "bySeason": {"2026": {"points": 0, "wins": 0}},
         "allTime": {"points": 0, "wins": 0, "podiums": 0},
-        "feeder": {"f2": {"allTime": {"points": 120, "wins": 1, "podiums": 3}, "bySeason": {"2024": {"points": 50, "wins": 0}, "2025": {"points": 70, "wins": 1}}}
+        "feeder": {"f2": {"allTime": {"points": 120, "wins": 1, "podiums": 3}, "bySeason": {"2024": {"points": 50, "wins": 0}, "2025": {"points": 70, "wins": 1}}}}
       },
       "kimi-antonelli": {
         "bySeason": {"2026": {"points": 0, "wins": 0}},
@@ -119,11 +119,52 @@
       },
       "fernando-alonso": {
         "bySeason": {"2020": {"points": 0, "wins": 0}, "2021": {"points": 0, "wins": 0}, "2022": {"points": 30, "wins": 0}, "2023": {"points": 110, "wins": 1}, "2024": {"points": 120, "wins": 1}, "2025": {"points": 100, "wins": 0}, "2026": {"points": 0, "wins": 0}},
-        "allTime": {"points": 2050, "wins": 32, "podiums": 97}
+        "allTime": {"points": 2050, "wins": 32, "podiums": 97},
+        "careerSummary": [
+          {"season": "1999", "series": "Euro Open by Nissan", "team": "Campos Motorsport", "races": 15, "wins": 6, "poles": 6, "fastestLaps": 5, "podiums": 8, "points": 164, "position": "1st"},
+          {"season": "2000", "series": "International Formula 3000", "team": "Team Astromega", "races": 9, "wins": 1, "poles": 1, "fastestLaps": 2, "podiums": 2, "points": 17, "position": "4th"},
+          {"season": "2000", "series": "Formula One", "team": "European Minardi F1", "role": "Reserve driver"},
+          {"season": "2001", "series": "Formula One", "team": "European Minardi F1", "races": 17, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 0, "points": 0, "position": "23rd"},
+          {"season": "2002", "series": "Formula One", "team": "Mild Seven Renault F1 Team", "role": "Test driver"},
+          {"season": "2003", "series": "Formula One", "team": "Mild Seven Renault F1 Team", "races": 16, "wins": 1, "poles": 2, "fastestLaps": 1, "podiums": 4, "points": 55, "position": "6th"},
+          {"season": "2004", "series": "Formula One", "team": "Mild Seven Renault F1 Team", "races": 18, "wins": 0, "poles": 1, "fastestLaps": 0, "podiums": 4, "points": 59, "position": "4th"},
+          {"season": "2005", "series": "Formula One", "team": "Mild Seven Renault F1 Team", "races": 19, "wins": 7, "poles": 6, "fastestLaps": 2, "podiums": 15, "points": 133, "position": "1st"},
+          {"season": "2006", "series": "Formula One", "team": "Mild Seven Renault F1 Team", "races": 18, "wins": 7, "poles": 6, "fastestLaps": 5, "podiums": 14, "points": 134, "position": "1st"},
+          {"season": "2007", "series": "Formula One", "team": "Vodafone McLaren Mercedes", "races": 17, "wins": 4, "poles": 2, "fastestLaps": 3, "podiums": 12, "points": 109, "position": "3rd"},
+          {"season": "2008", "series": "Formula One", "team": "ING Renault F1 Team", "races": 18, "wins": 2, "poles": 0, "fastestLaps": 0, "podiums": 3, "points": 61, "position": "5th"},
+          {"season": "2009", "series": "Formula One", "team": "ING Renault F1 Team", "races": 17, "wins": 0, "poles": 1, "fastestLaps": 2, "podiums": 1, "points": 26, "position": "9th"},
+          {"season": "2010", "series": "Formula One", "team": "Scuderia Ferrari Marlboro", "races": 19, "wins": 5, "poles": 2, "fastestLaps": 5, "podiums": 10, "points": 252, "position": "2nd"},
+          {"season": "2011", "series": "Formula One", "team": "Scuderia Ferrari", "races": 19, "wins": 1, "poles": 0, "fastestLaps": 1, "podiums": 10, "points": 257, "position": "4th"},
+          {"season": "2012", "series": "Formula One", "team": "Scuderia Ferrari", "races": 20, "wins": 3, "poles": 2, "fastestLaps": 0, "podiums": 13, "points": 278, "position": "2nd"},
+          {"season": "2013", "series": "Formula One", "team": "Scuderia Ferrari", "races": 19, "wins": 2, "poles": 0, "fastestLaps": 2, "podiums": 9, "points": 242, "position": "2nd"},
+          {"season": "2014", "series": "Formula One", "team": "Scuderia Ferrari", "races": 19, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 2, "points": 161, "position": "6th"},
+          {"season": "2015", "series": "Formula One", "team": "McLaren Honda", "races": 18, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 0, "points": 11, "position": "17th"},
+          {"season": "2016", "series": "Formula One", "team": "McLaren Honda", "races": 20, "wins": 0, "poles": 0, "fastestLaps": 1, "podiums": 0, "points": 54, "position": "10th"},
+          {"season": "2017", "series": "Formula One", "team": "McLaren Honda", "races": 19, "wins": 0, "poles": 0, "fastestLaps": 1, "podiums": 0, "points": 17, "position": "15th"},
+          {"season": "2017", "series": "IndyCar Series", "team": "McLaren-Honda-Andretti", "races": 1, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 0, "points": 47, "position": "29th"},
+          {"season": "2018", "series": "Formula One", "team": "McLaren F1 Team", "races": 21, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 0, "points": 50, "position": "11th"},
+          {"season": "2018", "series": "24 Hours of Le Mans", "team": "Toyota Gazoo Racing", "races": 1, "wins": 1, "poles": 1, "fastestLaps": 0, "podiums": 1, "points": null, "position": "1st"},
+          {"season": "2018", "series": "IMSA SportsCar Championship", "team": "United Autosports", "races": 1, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 0, "points": 18, "position": "58th"},
+          {"season": "2018–19", "series": "FIA World Endurance Championship", "team": "Toyota Gazoo Racing", "races": 8, "wins": 5, "poles": 4, "fastestLaps": 0, "podiums": 7, "points": 198, "position": "1st"},
+          {"season": "2019", "series": "IMSA SportsCar Championship", "team": "Konica Minolta Cadillac", "races": 1, "wins": 1, "poles": 0, "fastestLaps": 0, "podiums": 1, "points": 35, "position": "27th"},
+          {"season": "2019", "series": "24 Hours of Le Mans", "team": "Toyota Gazoo Racing", "races": 1, "wins": 1, "poles": 0, "fastestLaps": 0, "podiums": 1, "points": null, "position": "1st"},
+          {"season": "2019", "series": "IndyCar Series", "team": "McLaren Racing", "races": 0, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 0, "points": 0, "position": "NC"},
+          {"season": "2019", "series": "Formula One", "team": "McLaren F1 Team", "role": "Test driver"},
+          {"season": "2020", "series": "Dakar Rally", "team": "Toyota Gazoo Racing", "races": 1, "wins": 0, "poles": null, "fastestLaps": 0, "podiums": null, "points": null, "position": "13th"},
+          {"season": "2020", "series": "IndyCar Series", "team": "Arrow McLaren SP", "races": 1, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 0, "points": 18, "position": "31st"},
+          {"season": "2020", "series": "Formula One", "team": "Renault F1 Team", "role": "Test driver"},
+          {"season": "2021", "series": "Formula One", "team": "Alpine F1 Team", "races": 22, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 1, "points": 81, "position": "10th"},
+          {"season": "2022", "series": "Formula One", "team": "BWT Alpine F1 Team", "races": 22, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 0, "points": 81, "position": "9th"},
+          {"season": "2023", "series": "Formula One", "team": "Aston Martin Aramco Cognizant F1 Team", "races": 22, "wins": 0, "poles": 0, "fastestLaps": 1, "podiums": 8, "points": 206, "position": "4th"},
+          {"season": "2024", "series": "Formula One", "team": "Aston Martin Aramco F1 Team", "races": 24, "wins": 0, "poles": 0, "fastestLaps": 2, "podiums": 0, "points": 70, "position": "9th"},
+          {"season": "2025", "series": "Formula One", "team": "Aston Martin Aramco F1 Team", "races": 24, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 0, "points": 56, "position": "10th"}
+        ],
+        "sources": {"wikipedia": "https://en.wikipedia.org/wiki/Fernando_Alonso"}
       },
       "lance-stroll": {
         "bySeason": {"2020": {"points": 20, "wins": 0}, "2021": {"points": 34, "wins": 0}, "2022": {"points": 45, "wins": 0}, "2023": {"points": 60, "wins": 0}, "2024": {"points": 40, "wins": 0}, "2025": {"points": 30, "wins": 0}, "2026": {"points": 0, "wins": 0}},
-        "allTime": {"points": 300, "wins": 0, "podiums": 2}
+        "allTime": {"points": 300, "wins": 0, "podiums": 2},
+        "sources": {"wikipedia": "https://en.wikipedia.org/wiki/Lance_Stroll"}
       },
       "alexander-albon": {
         "bySeason": {"2020": {"points": 5, "wins": 0}, "2021": {"points": 45, "wins": 0}, "2022": {"points": 70, "wins": 0}, "2023": {"points": 60, "wins": 0}, "2024": {"points": 30, "wins": 0}, "2025": {"points": 20, "wins": 0}, "2026": {"points": 0, "wins": 0}},
@@ -135,7 +176,37 @@
       },
       "pierre-gasly": {
         "bySeason": {"2020": {"points": 75, "wins": 0}, "2021": {"points": 90, "wins": 0}, "2022": {"points": 100, "wins": 0}, "2023": {"points": 95, "wins": 0}, "2024": {"points": 80, "wins": 0}, "2025": {"points": 70, "wins": 0}, "2026": {"points": 0, "wins": 0}},
-        "allTime": {"points": 670, "wins": 1, "podiums": 10}
+        "allTime": {"points": 670, "wins": 1, "podiums": 10},
+        "careerSummary": [
+          {"season": "2011", "series": "French F4 Championship", "team": "Auto Sport Academy", "races": 14, "wins": 4, "poles": 2, "fastestLaps": 1, "podiums": 7, "points": 104, "position": "3rd"},
+          {"season": "2012", "series": "Eurocup Formula Renault 2.0", "team": "R-ace GP", "races": 14, "wins": 0, "poles": 1, "fastestLaps": 0, "podiums": 2, "points": 49, "position": "10th"},
+          {"season": "2012", "series": "Formula Renault 2.0 NEC", "team": "R-ace GP", "races": 7, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 1, "points": 78, "position": "23rd"},
+          {"season": "2013", "series": "Eurocup Formula Renault 2.0", "team": "Tech 1 Racing", "races": 14, "wins": 3, "poles": 4, "fastestLaps": 2, "podiums": 8, "points": 195, "position": "1st"},
+          {"season": "2013", "series": "Formula Renault 2.0 Alps", "team": "Tech 1 Racing", "races": 6, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 3, "points": 72, "position": "6th"},
+          {"season": "2013", "series": "Pau Formula Renault 2.0 Trophy", "team": "Tech 1 Racing", "races": 1, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 0, "points": null, "position": "7th"},
+          {"season": "2014", "series": "Formula Renault 3.5 Series", "team": "Arden Motorsport", "races": 17, "wins": 0, "poles": 1, "fastestLaps": 3, "podiums": 8, "points": 192, "position": "2nd"},
+          {"season": "2014", "series": "GP2 Series", "team": "Caterham Racing", "races": 6, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 0, "points": 0, "position": "29th"},
+          {"season": "2015", "series": "GP2 Series", "team": "DAMS", "races": 21, "wins": 0, "poles": 3, "fastestLaps": 1, "podiums": 4, "points": 110, "position": "8th"},
+          {"season": "2015", "series": "Formula One", "team": "Red Bull Racing", "role": "Reserve driver"},
+          {"season": "2015", "series": "Formula One", "team": "Scuderia Toro Rosso", "role": "Test driver"},
+          {"season": "2016", "series": "GP2 Series", "team": "Prema Racing", "races": 22, "wins": 4, "poles": 5, "fastestLaps": 4, "podiums": 9, "points": 219, "position": "1st"},
+          {"season": "2016", "series": "Formula One", "team": "Red Bull Racing", "role": "Reserve driver"},
+          {"season": "2016", "series": "Formula One", "team": "Scuderia Toro Rosso", "role": "Test driver"},
+          {"season": "2016–17", "series": "Formula E", "team": "Renault e.dams", "races": 2, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 0, "points": 18, "position": "16th"},
+          {"season": "2017", "series": "Formula One", "team": "Scuderia Toro Rosso", "races": 5, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 0, "points": 0, "position": "21st"},
+          {"season": "2017", "series": "Super Formula", "team": "Team Mugen", "races": 7, "wins": 2, "poles": 0, "fastestLaps": 0, "podiums": 3, "points": 33, "position": "2nd"},
+          {"season": "2017", "series": "Formula One", "team": "Red Bull Racing", "role": "Reserve driver"},
+          {"season": "2018", "series": "Formula One", "team": "Red Bull Toro Rosso Honda", "races": 21, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 0, "points": 29, "position": "15th"},
+          {"season": "2019", "series": "Formula One", "team": "Aston Martin Red Bull Racing", "races": 12, "wins": 0, "poles": 0, "fastestLaps": 2, "podiums": 0, "points": 95, "position": "7th"},
+          {"season": "2019", "series": "Formula One", "team": "Red Bull Toro Rosso Honda", "races": 9, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 1},
+          {"season": "2020", "series": "Formula One", "team": "Scuderia AlphaTauri Honda", "races": 17, "wins": 1, "poles": 0, "fastestLaps": 0, "podiums": 1, "points": 75, "position": "10th"},
+          {"season": "2021", "series": "Formula One", "team": "Scuderia AlphaTauri Honda", "races": 22, "wins": 0, "poles": 0, "fastestLaps": 1, "podiums": 1, "points": 110, "position": "9th"},
+          {"season": "2022", "series": "Formula One", "team": "Scuderia AlphaTauri", "races": 22, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 0, "points": 23, "position": "14th"},
+          {"season": "2023", "series": "Formula One", "team": "BWT Alpine F1 Team", "races": 22, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 1, "points": 62, "position": "11th"},
+          {"season": "2024", "series": "Formula One", "team": "BWT Alpine F1 Team", "races": 24, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 1, "points": 42, "position": "10th"},
+          {"season": "2025", "series": "Formula One", "team": "BWT Alpine F1 Team", "races": 24, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 0, "points": 22, "position": "18th"}
+        ],
+        "sources": {"wikipedia": "https://en.wikipedia.org/wiki/Pierre_Gasly"}
       },
       "franco-colapinto": {
         "bySeason": {"2026": {"points": 0, "wins": 0}},
@@ -143,8 +214,10 @@
         "feeder": {
           "f2": {"allTime": {"points": 110, "wins": 1, "podiums": 3}, "bySeason": {"2024": {"points": 50, "wins": 0}, "2025": {"points": 60, "wins": 1}}},
           "f3": {"allTime": {"points": 85, "wins": 0, "podiums": 2}, "bySeason": {"2023": {"points": 40, "wins": 0}, "2024": {"points": 45, "wins": 0}}}
-        }
+        },
+        "sources": {"wikipedia": "https://en.wikipedia.org/wiki/Franco_Colapinto"}
       }
+    }
     },
     "teamStats": {
       "oracle-red-bull": {"bySeason": {"2020": {"points": 300, "wins": 13}, "2021": {"points": 420, "wins": 15}, "2022": {"points": 550, "wins": 20}, "2023": {"points": 520, "wins": 18}, "2024": {"points": 480, "wins": 12}, "2025": {"points": 500, "wins": 14}, "2026": {"points": 0, "wins": 0}}, "allTime": {"points": 3260, "wins": 108}},

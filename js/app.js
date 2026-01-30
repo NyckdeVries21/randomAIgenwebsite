@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
       const topTeamsEl = document.getElementById('topTeams');
       if(topTeamsEl){
-        const teams = Object.entries(stats.teamStats).map(([slug,t])=>({slug,name:slug.replace(/-/g,' '),points:t.allTime.points}));
+        const teams = Object.entries(stats.teamStats).map(([slug,t])=>({slug,name:slug.replace(/-/g,' '),points: (t && t.allTime && typeof t.allTime.points === 'number') ? t.allTime.points : (t && t.allTime && parseInt(t.allTime.points) || 0)}));
         teams.sort((a,b)=>b.points-a.points);
         teams.slice(0,5).forEach(t=>{
           const li = document.createElement('li');
@@ -246,7 +246,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
       // Driver page helper (supports F1 and optional feeder series like F2/F3)
       const driverStatsEl = document.getElementById('driverStats');
       if(driverStatsEl){
-        const driverSlug = driverStatsEl.datasetDriver || driverStatsEl.dataset.driver;
+        const driverSlug = (driverStatsEl.dataset && driverStatsEl.dataset.driver) || driverStatsEl.getAttribute('data-driver') || '';
         const seasons = stats.seasons;
         const dsourced = stats.driverStats[driverSlug];
         const controls = document.createElement('div');
