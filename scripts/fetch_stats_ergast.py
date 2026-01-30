@@ -60,6 +60,7 @@ def main():
     driver_stats = {}
     team_stats = {}
     driver_info = {}
+    ctor_info = {}
 
     for season in seasons:
         s = str(season)
@@ -101,6 +102,11 @@ def main():
                     points = float(c.get('points', 0))
                     position = int(c.get('position', 0)) if c.get('position') else None
                     ctor_slug = ctorId.replace('_', '-').lower() if ctorId else None
+                    # collect constructor info
+                    if ctor_slug:
+                        ci = ctor_info.setdefault(ctor_slug, {'constructorId': ctorId, 'name': safe_get(c, 'Constructor', 'name'), 'seasons': []})
+                        if s not in ci['seasons']:
+                            ci['seasons'].append(s)
                     per_team[ctor_slug]['points'] = points
                     per_team[ctor_slug]['position'] = position
         except Exception as e:
@@ -127,6 +133,16 @@ def main():
                     # normalize ids
                     driver_slug = driverId.replace('_', '-').lower() if driverId else None
                     ctor_slug = ctorId.replace('_', '-').lower() if ctorId else None
+                    # collect constructor seasonal association
+                    if ctor_slug:
+                        ci = ctor_info.setdefault(ctor_slug, {'constructorId': ctorId, 'name': safe_get(r, 'Constructor', 'name'), 'seasons': []})
+                        if s not in ci['seasons']:
+                            ci['seasons'].append(s)
+                    # collect driver basic info from race row if missing
+                    if driver_slug:
+                        di = driver_info.setdefault(driver_slug, {'driverId': driverId, 'givenName': safe_get(r, 'Driver', 'givenName'), 'familyName': safe_get(r, 'Driver', 'familyName'), 'dateOfBirth': None, 'nationality': None, 'code': None, 'url': None, 'seasons': []})
+                        if s not in di['seasons']:
+                            di['seasons'].append(s)
                     if pos == 1:
                         per_driver[driver_slug]['wins'] += 1
                         per_team[ctor_slug]['wins'] += 1
@@ -219,6 +235,69 @@ def main():
         'teamStats': team_stats,
         'drivers': driver_info
     }
+
+    # compute allTime aggregates for drivers and teams from bySeason data
+    for dslug, dval in driver_stats.items():
+        bys = dval.get('bySeason', {})
+        alltime = {'points': 0.0, 'wins': 0, 'podiums': 0, 'poles': 0, 'fastestLaps': 0}
+        for s, sd in bys.items():
+            alltime['points'] += float(sd.get('points', 0) or 0)
+            alltime['wins'] += int(sd.get('wins', 0) or 0)
+            alltime['podiums'] += int(sd.get('podiums', 0) or 0)
+            alltime['poles'] += int(sd.get('poles', 0) or 0)
+            alltime['fastestLaps'] += int(sd.get('fastestLaps', 0) or 0)
+        # normalize points to int when possible
+        pts = alltime['points']
+        driver_stats[dslug]['allTime'] = {
+            'points': int(pts) if float(pts).is_integer() else float(pts),
+            'wins': alltime['wins'],
+            'podiums': alltime['podiums'],
+            'poles': alltime['poles'],
+            'fastestLaps': alltime['fastestLaps']
+        }
+
+    for tslug, tval in team_stats.items():
+        bys = tval.get('bySeason', {})
+        alltime = {'points': 0.0, 'wins': 0}
+        for s, sd in bys.items():
+            alltime['points'] += float(sd.get('points', 0) or 0)
+            alltime['wins'] += int(sd.get('wins', 0) or 0)
+        pts = alltime['points']
+        team_stats[tslug]['allTime'] = {'points': int(pts) if float(pts).is_integer() else float(pts), 'wins': alltime['wins']}
+
+    # cache per-driver and per-constructor Ergast endpoints for deeper analysis
+    try:
+        for slug, info in driver_info.items():
+            did = info.get('driverId')
+            if not did:
+                continue
+            # results and seasons for driver
+            try:
+                fetch_json(f'https://ergast.com/api/f1/drivers/{did}/results.json?limit=1000', save_path=ERGAST_DIR / f'driver_{slug}_results.json')
+            except Exception:
+                pass
+            try:
+                fetch_json(f'https://ergast.com/api/f1/drivers/{did}/seasons.json?limit=1000', save_path=ERGAST_DIR / f'driver_{slug}_seasons.json')
+            except Exception:
+                pass
+    except Exception as e:
+        print('Per-driver cache error', e)
+
+    try:
+        for cslug, info in ctor_info.items():
+            cid = info.get('constructorId')
+            if not cid:
+                continue
+            try:
+                fetch_json(f'https://ergast.com/api/f1/constructors/{cid}/results.json?limit=1000', save_path=ERGAST_DIR / f'ctor_{cslug}_results.json')
+            except Exception:
+                pass
+            try:
+                fetch_json(f'https://ergast.com/api/f1/constructors/{cid}/seasons.json?limit=1000', save_path=ERGAST_DIR / f'ctor_{cslug}_seasons.json')
+            except Exception:
+                pass
+    except Exception as e:
+        print('Per-constructor cache error', e)
 
     # backup existing stats.json if present
     if STATS_IN.exists():

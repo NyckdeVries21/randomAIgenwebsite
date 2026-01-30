@@ -21,6 +21,7 @@ import time
 from urllib.parse import unquote
 
 import requests
+from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data'
@@ -70,6 +71,46 @@ def fetch_wikitext(title):
             content = slot.get('*') if isinstance(slot, dict) else revs[0].get('*')
             return content or ''
     return ''
+
+def fetch_parsed_html(title):
+    params = {'action':'parse','page':title,'prop':'text','format':'json'}
+    r = requests.get(WIKI_API, params=params, timeout=15)
+    r.raise_for_status()
+    js = r.json()
+    text = js.get('parse', {}).get('text', {}).get('*', '')
+    return text
+
+def find_series_years_from_tables(html, keywords):
+    found = set()
+    if not html:
+        return []
+    soup = BeautifulSoup(html, 'html.parser')
+    # examine captions and entire table text
+    tables = soup.find_all('table')
+    pattern = re.compile(r'\b(19\d{2}|20\d{2})\b')
+    for tbl in tables:
+        txt = ''
+        cap = tbl.find('caption')
+        if cap and cap.get_text(strip=True):
+            txt += cap.get_text(separator=' ') + '\n'
+        # include nearby heading (previous siblings that are headers)
+        prev = tbl.find_previous_sibling()
+        for _ in range(3):
+            if not prev:
+                break
+            if prev.name and prev.name.startswith('h'):
+                txt += prev.get_text(separator=' ') + '\n'
+                break
+            prev = prev.find_previous_sibling()
+        txt += tbl.get_text(separator=' ')
+        for kw in keywords:
+            if re.search(re.escape(kw), txt, flags=re.IGNORECASE):
+                for y in pattern.findall(txt):
+                    y_int = int(y)
+                    if 1990 <= y_int <= 2035:
+                        found.add(y_int)
+                # also try to detect header rows with years like '2019 2020 2021'
+    return sorted(found)
 
 def find_series_years(wikitext, keywords):
     # find occurrences of keywords and search +/- 200 chars for 4-digit years
@@ -125,9 +166,24 @@ def main():
             wikitext = fetch_wikitext(title)
         except Exception as e:
             print('  Failed fetching wikitext for', title, e)
-            continue
+            wikitext = ''
+
+        # best-effort: use both wikitext search and parsed HTML table extraction
         f2_years = find_series_years(wikitext, ['Formula 2', 'FIA Formula 2 Championship', 'F2'])
         f3_years = find_series_years(wikitext, ['Formula 3', 'FIA Formula 3 Championship', 'F3'])
+
+        # try parsing tables for stronger signals
+        try:
+            html = fetch_parsed_html(title)
+            table_f2 = find_series_years_from_tables(html, ['Formula 2', 'F2', 'FIA Formula 2'])
+            table_f3 = find_series_years_from_tables(html, ['Formula 3', 'F3', 'FIA Formula 3'])
+        except Exception:
+            table_f2 = []
+            table_f3 = []
+
+        # merge unique
+        f2_years = sorted(set(f2_years) | set(table_f2))
+        f3_years = sorted(set(f3_years) | set(table_f3))
 
         results[slug] = {
             'wikipedia_title': title,

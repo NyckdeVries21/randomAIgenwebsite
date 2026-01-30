@@ -86,12 +86,33 @@
         "allTime": {"points": 711, "wins": 4, "podiums": 12}
       },
       "oliver-bearman": {
-        "bySeason": {"2026": {"points": 0, "wins": 0}},
-        "allTime": {"points": 0, "wins": 0, "podiums": 0},
+        "bySeason": {
+          "2026": {"points": 0, "wins": 0},
+          "2025": {"series": "Formula One", "team": "MoneyGram Haas F1 Team", "races": 24, "points": 41, "wins": 0, "podiums": 0, "position": 13},
+          "2024": {"series": "Formula One", "team": "Scuderia Ferrari / MoneyGram Haas F1 Team", "races": 3, "points": 7, "wins": 0, "podiums": 0, "position": 18},
+          "2024_f2": {"series": "FIA Formula 2 Championship", "team": "Prema Racing", "races": 24, "points": 75, "wins": 3, "podiums": 3, "position": 12},
+          "2023_f2": {"series": "FIA Formula 2 Championship", "team": "Prema Racing", "races": 26, "points": 130, "wins": 4, "podiums": 5, "position": 6},
+          "2022_f3": {"series": "FIA Formula 3 Championship", "team": "Prema Racing", "races": 18, "points": 132, "wins": 1, "podiums": 8, "position": 3},
+          "2021_f4_adac": {"series": "ADAC Formula 4 Championship", "team": "Van Amersfoort Racing", "races": 18, "points": 295, "wins": 6, "podiums": 11, "position": 1},
+          "2021_f4_ita": {"series": "Italian F4 Championship", "team": null, "races": 21, "points": 343, "wins": 11, "podiums": 15, "position": 1},
+          "2020_f4_adac": {"series": "ADAC Formula 4 Championship", "team": "US Racing", "races": 21, "points": 144, "wins": 1, "podiums": 3, "position": 7},
+          "2020_f4_ita": {"series": "Italian F4 Championship", "team": null, "races": 8, "points": 85, "wins": 1, "podiums": 2, "position": 10}
+        },
+        "allTime": {"f1Points": 48, "f2Points": 205, "f3Points": 132, "f4Points": 867, "wins": {"f2": 7, "f3": 1, "f4": 19}, "podiums": {"f2": 8, "f3": 8, "f4": 29}},
         "feeder": {
-          "f2": {"allTime": {"points": 180, "wins": 3, "podiums": 7}, "bySeason": {"2024": {"points": 80, "wins": 1}, "2025": {"points": 100, "wins": 2}}},
-          "f3": {"allTime": {"points": 120, "wins": 2, "podiums": 5}, "bySeason": {"2023": {"points": 60, "wins": 1}, "2024": {"points": 60, "wins": 1}}}
-        }
+          "f2": {
+            "allTime": {"points": 205, "wins": 7, "podiums": 8},
+            "bySeason": {"2023": {"team": "Prema Racing", "races": 26, "points": 130, "wins": 4, "podiums": 5, "position": 6}, "2024": {"team": "Prema Racing", "races": 24, "points": 75, "wins": 3, "podiums": 3, "position": 12}}
+          },
+          "f3": {
+            "allTime": {"points": 132, "wins": 1, "podiums": 8},
+            "bySeason": {"2022": {"team": "Prema Racing", "races": 18, "points": 132, "wins": 1, "podiums": 8, "position": 3}}
+          }
+        },
+        "titles": [
+          {"year": 2021, "series": "ADAC Formula 4 Championship", "team": "Van Amersfoort Racing"},
+          {"year": 2021, "series": "Italian F4 Championship", "team": null}
+        ]
       },
       "liam-lawson": {
         "bySeason": {"2026": {"points": 0, "wins": 0}},
@@ -99,26 +120,87 @@
         "feeder": {"f2": {"allTime": {"points": 140, "wins": 2, "podiums": 4}, "bySeason": {"2024": {"points": 60, "wins": 1}, "2025": {"points": 80, "wins": 1}}}}
       },
       "arvid-lindblad": {
-        "bySeason": {"2026": {"points": 0, "wins": 0}},
-        "allTime": {"points": 0, "wins": 0, "podiums": 0},
-        "feeder": {"f2": {"allTime": {"points": 120, "wins": 1, "podiums": 3}, "bySeason": {"2024": {"points": 50, "wins": 0}, "2025": {"points": 70, "wins": 1}}}}
+        "bySeason": {
+          "2026": {"series": "Formula One", "team": "Visa Cash App Racing Bulls F1 Team", "races": 0, "points": 0, "wins": 0, "podiums": 0, "position": null},
+          "2025": {"series": "FIA Formula 2 Championship", "team": "Campos Racing", "races": 27, "points": 134, "wins": 3, "podiums": 5, "position": 6},
+          "2024": {"series": "FIA Formula 3 Championship", "team": "Prema Racing", "races": 20, "points": 113, "wins": 4, "podiums": 5, "position": 4}
+        },
+        "allTime": {"points": 247, "wins": 7, "podiums": 10},
+        "feeder": {
+          "f3": {
+            "allTime": {"points": 113, "wins": 4, "podiums": 5},
+            "bySeason": {"2024": {"team": "Prema Racing", "races": 20, "points": 113, "wins": 4, "podiums": 5, "position": 4}}
+          },
+          "f2": {
+            "allTime": {"points": 134, "wins": 3, "podiums": 5},
+            "bySeason": {"2025": {"team": "Campos Racing", "races": 27, "points": 134, "wins": 3, "podiums": 5, "position": 6}}
+          }
+        },
+        "titles": [
+          {"year": 2025, "series": "Formula Regional Oceania Championship", "team": "M2 Competition"}
+        ]
       },
       "kimi-antonelli": {
-        "bySeason": {"2026": {"points": 0, "wins": 0}},
-        "allTime": {"points": 0, "wins": 0, "podiums": 0},
+        "bySeason": {
+          "2026": {"points": 0, "wins": 0},
+          "2025": {"series": "Formula One", "team": "Mercedes-AMG Petronas F1 Team", "races": 24, "points": 150, "wins": 0, "podiums": 3, "position": 7},
+          "2024": {"series": "Formula One", "team": "Mercedes-AMG Petronas F1 Team", "races": 26, "points": 113, "wins": 2, "podiums": 3, "position": 6}
+        },
+        "allTime": {"points": 263, "wins": 2, "podiums": 6},
         "feeder": {
-          "f2": {"allTime": {"points": 160, "wins": 2, "podiums": 5}, "bySeason": {"2024": {"points": 70, "wins": 1}, "2025": {"points": 90, "wins": 1}}},
-          "f3": {"allTime": {"points": 110, "wins": 1, "podiums": 3}, "bySeason": {"2023": {"points": 50, "wins": 1}, "2024": {"points": 60, "wins": 0}}}
-        }
+          "f3": {
+            "allTime": {"points": 492, "wins": 8, "podiums": 17},
+            "bySeason": {
+              "2023_frme": {"series": "Formula Regional Middle East Championship", "team": "Mumbai Falcons Racing Limited", "races": 15, "points": 192, "wins": 3, "podiums": 7, "position": 1},
+              "2023_freurope": {"series": "Formula Regional European Championship", "team": "Prema Racing", "races": 20, "points": 300, "wins": 5, "podiums": 11, "position": 1}
+            }
+          },
+          "f2": {
+            "allTime": {"points": 113, "wins": 2, "podiums": 3},
+            "bySeason": {
+              "2024": {"team": "Prema Racing", "races": 26, "points": 113, "wins": 2, "podiums": 3, "position": 6}
+            }
+          }
+        },
+        "titles": [
+          {"year": 2022, "series": "Italian F4 Championship", "team": "Prema Racing"},
+          {"year": 2022, "series": "ADAC Formula 4", "team": "Prema Racing"},
+          {"year": 2023, "series": "Formula Regional Middle East Championship", "team": "Mumbai Falcons Racing Limited"},
+          {"year": 2023, "series": "Formula Regional European Championship", "team": "Prema Racing"}
+        ]
       },
       "gabriel-bortoleto": {
         "bySeason": {"2026": {"points": 0, "wins": 0}},
         "allTime": {"points": 0, "wins": 0, "podiums": 0},
-        "feeder": {"f2": {"allTime": {"points": 90, "wins": 1, "podiums": 2}, "bySeason": {"2025": {"points": 90, "wins": 1}}},
-        "f3": {"allTime": {"points": 70, "wins": 0, "podiums": 1}, "bySeason": {"2024": {"points": 70, "wins": 0}}}
+        "feeder": {
+          "f3": {
+            "allTime": {"points": 164, "wins": 2, "podiums": 6},
+            "bySeason": {
+              "2023": {"team": "Trident", "races": 18, "points": 164, "wins": 2, "podiums": 6, "position": 1}
+            }
+          },
+          "f2": {
+            "allTime": {"points": 214.5, "wins": 2, "podiums": 8},
+            "bySeason": {
+              "2024": {"team": "Invicta Racing", "races": 28, "points": 214.5, "wins": 2, "podiums": 8, "position": 1}
+            }
+          }
+        },
+        "titles": [
+          {"year": 2023, "series": "FIA Formula 3 Championship", "team": "Trident"},
+          {"year": 2024, "series": "FIA Formula 2 Championship", "team": "Invicta Racing"}
+        ]
       },
       "fernando-alonso": {
-        "bySeason": {"2020": {"points": 0, "wins": 0}, "2021": {"points": 0, "wins": 0}, "2022": {"points": 30, "wins": 0}, "2023": {"points": 110, "wins": 1}, "2024": {"points": 120, "wins": 1}, "2025": {"points": 100, "wins": 0}, "2026": {"points": 0, "wins": 0}},
+        "bySeason": {
+          "2026": {"points": 0, "wins": 0},
+          "2025": {"points": 100, "wins": 0},
+          "2024": {"points": 120, "wins": 1},
+          "2023": {"points": 110, "wins": 1},
+          "2022": {"points": 30, "wins": 0},
+          "2021": {"points": 0, "wins": 0},
+          "2020": {"points": 0, "wins": 0}
+        },
         "allTime": {"points": 2050, "wins": 32, "podiums": 97},
         "careerSummary": [
           {"season": "1999", "series": "Euro Open by Nissan", "team": "Campos Motorsport", "races": 15, "wins": 6, "poles": 6, "fastestLaps": 5, "podiums": 8, "points": 164, "position": "1st"},
@@ -158,13 +240,37 @@
           {"season": "2023", "series": "Formula One", "team": "Aston Martin Aramco Cognizant F1 Team", "races": 22, "wins": 0, "poles": 0, "fastestLaps": 1, "podiums": 8, "points": 206, "position": "4th"},
           {"season": "2024", "series": "Formula One", "team": "Aston Martin Aramco F1 Team", "races": 24, "wins": 0, "poles": 0, "fastestLaps": 2, "podiums": 0, "points": 70, "position": "9th"},
           {"season": "2025", "series": "Formula One", "team": "Aston Martin Aramco F1 Team", "races": 24, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 0, "points": 56, "position": "10th"}
-        ],
-        "sources": {"wikipedia": "https://en.wikipedia.org/wiki/Fernando_Alonso"}
+        ]
       },
       "lance-stroll": {
-        "bySeason": {"2020": {"points": 20, "wins": 0}, "2021": {"points": 34, "wins": 0}, "2022": {"points": 45, "wins": 0}, "2023": {"points": 60, "wins": 0}, "2024": {"points": 40, "wins": 0}, "2025": {"points": 30, "wins": 0}, "2026": {"points": 0, "wins": 0}},
-        "allTime": {"points": 300, "wins": 0, "podiums": 2},
-        "sources": {"wikipedia": "https://en.wikipedia.org/wiki/Lance_Stroll"}
+        "bySeason": {
+          "2017": {"series": "Formula One", "team": "Williams Martini Racing", "races": 20, "points": 40, "wins": 0, "podiums": 0, "position": 12},
+          "2018": {"series": "Formula One", "team": "Williams Martini Racing", "races": 21, "points": 6, "wins": 0, "podiums": 0, "position": 18},
+          "2019": {"series": "Formula One", "team": "SportPesa Racing Point F1 Team", "races": 21, "points": 21, "wins": 0, "podiums": 0, "position": 15},
+          "2020": {"series": "Formula One", "team": "BWT Racing Point F1 Team", "races": 17, "points": 75, "wins": 0, "podiums": 1, "position": 11},
+          "2021": {"series": "Formula One", "team": "Aston Martin Cognizant F1 Team", "races": 22, "points": 34, "wins": 0, "podiums": 0, "position": 13},
+          "2022": {"series": "Formula One", "team": "Aston Martin Aramco Cognizant F1 Team", "races": 22, "points": 18, "wins": 0, "podiums": 0, "position": 15},
+          "2023": {"series": "Formula One", "team": "Aston Martin Aramco Cognizant F1 Team", "races": 22, "points": 74, "wins": 0, "podiums": 0, "position": 10},
+          "2024": {"series": "Formula One", "team": "Aston Martin Aramco F1 Team", "races": 24, "points": 24, "wins": 0, "podiums": 0, "position": 13},
+          "2025": {"series": "Formula One", "team": "Aston Martin Aramco F1 Team", "races": 24, "points": 33, "wins": 0, "podiums": 0, "position": 16},
+          "2026": {"points": 0, "wins": 0}
+        },
+        "allTime": {"points": 325, "wins": 0, "podiums": 2},
+        "careerSummary": [
+          {"season": "2014", "series": "Florida Winter Series", "team": "Ferrari Driver Academy", "races": 12, "wins": 0, "poles": 1, "fastestLaps": 0, "podiums": 2, "points": null, "position": null},
+          {"season": "2014", "series": "Italian F4 Championship", "team": "Prema Powerteam", "races": 18, "wins": 7, "poles": 5, "fastestLaps": 11, "podiums": 13, "points": 331, "position": "1st"},
+          {"season": "2015", "series": "FIA Formula 3 European Championship", "team": "Prema Powerteam", "races": 32, "wins": 1, "poles": 0, "fastestLaps": 0, "podiums": 6, "points": 231, "position": "5th"},
+          {"season": "2015", "series": "Macau Grand Prix", "team": null, "races": 1, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 0, "points": null, "position": "8th"},
+          {"season": "2015", "series": "Toyota Racing Series", "team": "M2 Competition", "races": 16, "wins": 4, "poles": 0, "fastestLaps": 1, "podiums": 10, "points": 906, "position": "1st"},
+          {"season": "2016", "series": "FIA Formula 3 European Championship", "team": "Prema Powerteam", "races": 30, "wins": 14, "poles": 14, "fastestLaps": 13, "podiums": 20, "points": 507, "position": "1st"},
+          {"season": "2016", "series": "IMSA SportsCar Championship", "team": "Ford Chip Ganassi Racing", "races": 1, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 0, "points": 27, "position": "27th"}
+        ],
+        "titles": [
+          {"year": 2014, "series": "Italian F4 Championship", "team": "Prema Powerteam"},
+          {"year": 2015, "series": "Toyota Racing Series", "team": "M2 Competition"},
+          {"year": 2016, "series": "FIA Formula 3 European Championship", "team": "Prema Powerteam"}
+        ]
+        
       },
       "alexander-albon": {
         "bySeason": {"2020": {"points": 5, "wins": 0}, "2021": {"points": 45, "wins": 0}, "2022": {"points": 70, "wins": 0}, "2023": {"points": 60, "wins": 0}, "2024": {"points": 30, "wins": 0}, "2025": {"points": 20, "wins": 0}, "2026": {"points": 0, "wins": 0}},
@@ -175,7 +281,18 @@
         "allTime": {"points": 1300, "wins": 5, "podiums": 32}
       },
       "pierre-gasly": {
-        "bySeason": {"2020": {"points": 75, "wins": 0}, "2021": {"points": 90, "wins": 0}, "2022": {"points": 100, "wins": 0}, "2023": {"points": 95, "wins": 0}, "2024": {"points": 80, "wins": 0}, "2025": {"points": 70, "wins": 0}, "2026": {"points": 0, "wins": 0}},
+        "bySeason": {
+          "2026": {"team": "BWT Alpine F1 Team", "points": 0, "wins": 0, "podiums": 0, "poles": 0, "position": null, "fastestLaps": 0},
+          "2025": {"team": "BWT Alpine F1 Team", "points": 22, "wins": 0, "podiums": 0, "poles": 0, "position": 18},
+          "2024": {"team": "BWT Alpine F1 Team", "points": 42, "wins": 0, "podiums": 0, "poles": 0, "position": 10},
+          "2023": {"team": "BWT Alpine F1 Team", "points": 62, "wins": 0, "podiums": 0, "poles": 0, "position": 11},
+          "2022": {"team": "Scuderia AlphaTauri", "points": 23, "wins": 0, "podiums": 0, "poles": 0, "position": 14},
+          "2021": {"team": "Scuderia AlphaTauri", "points": 110, "wins": 0, "podiums": 0, "poles": 0, "position": 9},
+          "2020": {"team": "Scuderia AlphaTauri Honda", "points": 75, "wins": 0, "podiums": 0, "poles": 0, "position": 10},
+          "2019": {"team": "Red Bull", "points": 95, "wins": 0, "podiums": 0, "poles": 0, "position": 7},
+          "2018": {"team": "Scuderia Toro Rosso", "points": 29, "wins": 0, "podiums": 0, "poles": 0, "position": 15},
+          "2017": {"team": "Scuderia Toro Rosso", "points": 0, "wins": 0, "podiums": 0, "poles": 0, "position": 21}
+        },
         "allTime": {"points": 670, "wins": 1, "podiums": 10},
         "careerSummary": [
           {"season": "2011", "series": "French F4 Championship", "team": "Auto Sport Academy", "races": 14, "wins": 4, "poles": 2, "fastestLaps": 1, "podiums": 7, "points": 104, "position": "3rd"},
@@ -205,19 +322,37 @@
           {"season": "2023", "series": "Formula One", "team": "BWT Alpine F1 Team", "races": 22, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 1, "points": 62, "position": "11th"},
           {"season": "2024", "series": "Formula One", "team": "BWT Alpine F1 Team", "races": 24, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 1, "points": 42, "position": "10th"},
           {"season": "2025", "series": "Formula One", "team": "BWT Alpine F1 Team", "races": 24, "wins": 0, "poles": 0, "fastestLaps": 0, "podiums": 0, "points": 22, "position": "18th"}
-        ],
-        "sources": {"wikipedia": "https://en.wikipedia.org/wiki/Pierre_Gasly"}
+        ]
       },
       "franco-colapinto": {
-        "bySeason": {"2026": {"points": 0, "wins": 0}},
+        "bySeason": {
+          "2026": {"points": 0, "wins": 0},
+          "2025": {"team": "BWT Alpine F1 Team", "points": 0, "wins": 0, "podiums": 0, "poles": 0, "position": 20},
+          "2024": {"team": "Williams Racing", "points": 5, "wins": 0, "podiums": 0, "poles": 0, "position": 19}
+        },
         "allTime": {"points": 0, "wins": 0, "podiums": 0},
         "feeder": {
-          "f2": {"allTime": {"points": 110, "wins": 1, "podiums": 3}, "bySeason": {"2024": {"points": 50, "wins": 0}, "2025": {"points": 60, "wins": 1}}},
-          "f3": {"allTime": {"points": 85, "wins": 0, "podiums": 2}, "bySeason": {"2023": {"points": 40, "wins": 0}, "2024": {"points": 45, "wins": 0}}}
+          "f3": {
+            "allTime": {"points": 186, "wins": 4, "podiums": 7},
+            "bySeason": {
+              "2022": {"team": "Van Amersfoort Racing", "races": 18, "points": 76, "wins": 2, "podiums": 1, "position": 9},
+              "2023": {"team": "MP Motorsport", "races": 18, "points": 110, "wins": 2, "podiums": 5, "position": 4}
+            }
+          },
+          "f2": {
+            "allTime": {"points": 96, "wins": 1, "podiums": 3},
+            "bySeason": {
+              "2023": {"team": "MP Motorsport", "races": 2, "points": 0, "wins": 0, "podiums": 0, "position": 25},
+              "2024": {"team": "MP Motorsport", "races": 20, "points": 96, "wins": 1, "podiums": 3, "position": 9}
+            }
+          }
         },
-        "sources": {"wikipedia": "https://en.wikipedia.org/wiki/Franco_Colapinto"}
+        "titles": [
+          {"year": 2019, "series": "F4 Spanish Championship", "team": "Drivex School"}
+        ]
+        
       }
-    }
+
     },
     "teamStats": {
       "oracle-red-bull": {"bySeason": {"2020": {"points": 300, "wins": 13}, "2021": {"points": 420, "wins": 15}, "2022": {"points": 550, "wins": 20}, "2023": {"points": 520, "wins": 18}, "2024": {"points": 480, "wins": 12}, "2025": {"points": 500, "wins": 14}, "2026": {"points": 0, "wins": 0}}, "allTime": {"points": 3260, "wins": 108}},
@@ -226,4 +361,5 @@
       "mclaren-mastercard": {"bySeason": {"2020": {"points": 200, "wins": 1}, "2021": {"points": 280, "wins": 4}, "2022": {"points": 300, "wins": 5}, "2023": {"points": 320, "wins": 6}, "2024": {"points": 330, "wins": 7}, "2025": {"points": 340, "wins": 6}, "2026": {"points": 0, "wins": 0}}, "allTime": {"points": 2220, "wins": 36}},
       "audi-revolut": {"bySeason": {"2020": {"points": 0, "wins": 0}, "2021": {"points": 0, "wins": 0}, "2022": {"points": 0, "wins": 0}, "2023": {"points": 60, "wins": 0}, "2024": {"points": 120, "wins": 1}, "2025": {"points": 210, "wins": 3}, "2026": {"points": 0, "wins": 0}}, "allTime": {"points": 650, "wins": 8}}
     }
-  }
+
+}

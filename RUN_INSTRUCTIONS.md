@@ -11,9 +11,8 @@ python -m pip install -r requirements.txt
 # run orchestrator: fetch Ergast (2000..current), fix, validate, compute championships
 python scripts/run_fetch_and_merge.py
 
-# serve the site locally and open in browser
-python -m http.server 8000
-# open http://localhost:8000
+# (optional) serve the site locally and open in browser
+# python -m http.server 8000
 ```
 
 Notes
@@ -26,8 +25,8 @@ Notes
 Debugging
 - If the page shows "Kon statistieken niet laden":
   - Make sure you serve the site over HTTP (not file://).
-  - Check `http://localhost:8000/data/stats.json` or `data/stats.generated.json` for accessibility.
-  - Open browser DevTools → Network → filter `stats.json` and inspect Status/Response.
+  - Check `data/stats.json` or `data/stats.generated.json` for accessibility.
+  - If you open `index.html` directly, the page will read data from the `data/` folder; use DevTools → Network to inspect requests when necessary.
   - If Python is not installed, install from https://python.org and retry the commands above.
 
 APIs

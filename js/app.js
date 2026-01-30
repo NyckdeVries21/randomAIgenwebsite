@@ -13,6 +13,22 @@ document.addEventListener('DOMContentLoaded', ()=>{
   const grid = document.getElementById('driversGrid');
   const searchMessage = document.getElementById('searchMessage');
   const slugify = s=>s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'');
+  // compute basePath for GitHub Pages (supports username.github.io and username.github.io/repo)
+  const basePath = (()=>{
+    const parts = location.pathname.split('/').filter(Boolean);
+    if(location.hostname.endsWith('github.io') && parts.length>0) return '/' + parts[0];
+    return '';
+  })();
+  const sitePath = p=>{
+    if(!p) return (basePath || '/');
+    let out;
+    if(p.startsWith('/')) out = (basePath + p).replace(/\\/g,'/');
+    else out = (basePath + '/' + p).replace(/\\/g,'/');
+    if(location.protocol === 'file:'){
+      if(out.startsWith('/')) out = out.slice(1);
+    }
+    return out;
+  };
   if(search){
     if(grid){
       search.addEventListener('input', ()=>{
@@ -61,18 +77,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
   // Load local 2026 calendar JSON and populate table
   const calendarBody = document.getElementById('calendarBody');
-  // compute basePath for GitHub Pages (supports username.github.io and username.github.io/repo)
-  const basePath = (()=>{
-    const parts = location.pathname.split('/').filter(Boolean);
-    // If served on username.github.io/repo or org.github.io/repo, first segment is repo
-    if(location.hostname.endsWith('github.io') && parts.length>0) return '/' + parts[0];
-    return '';
-  })();
-  const sitePath = p=>{
-    if(!p) return (basePath || '/') ;
-    if(p.startsWith('/')) return (basePath + p).replace(/\\/g,'/');
-    return (basePath + '/' + p).replace(/\\/g,'/');
-  };
+  // sitePath previously defined above to avoid use-before-declaration bugs
   if(calendarBody){
     fetch(sitePath('/data/calendar-2026.json'))
       .then(r=>r.ok ? r.json() : Promise.reject('Failed to load'))
@@ -137,9 +142,25 @@ document.addEventListener('DOMContentLoaded', ()=>{
   fetch(sitePath('/data/stats.json'))
     .then(r=>r.ok ? r.json() : Promise.reject('Failed to load stats'))
     .then(stats=>{
+      // Expose full stats to window for pages/tools and add a debug log
+      try{
+        // expose full stats object for pages and dev tools
+        window.APP_STATS = stats;
+        // keep a raw JSON copy accessible and persist for debugging (non-sensitive)
+        try{ localStorage.setItem('APP_STATS', JSON.stringify(stats)); window.APP_STATS_RAW = JSON.stringify(stats); }catch(e){}
+
+        // small summary: counts for quick verification
+        const driverCount = Object.keys(stats.driverStats || {}).length;
+        const teamCount = Object.keys(stats.teamStats || {}).length;
+        const seasonCount = Array.isArray(stats.seasons) ? stats.seasons.length : 0;
+        // total top-level keys
+        const topKeys = Object.keys(stats).length;
+        console.debug('Loaded stats:', driverCount, 'drivers,', teamCount, 'teams,', seasonCount, 'seasons — top-level keys:', topKeys);
+      }catch(e){ console.debug('Could not attach APP_STATS', e); }
       // Top 5 drivers by allTime.points
       const topDriversEl = document.getElementById('topDrivers');
       if(topDriversEl){
+        topDriversEl.innerHTML = '';
         const drivers = Object.entries(stats.driverStats).map(([slug, d])=>({slug, name: slug.replace(/-/g,' '), points: d.allTime && d.allTime.points ? d.allTime.points : 0}));
         drivers.sort((a,b)=>b.points-a.points);
         // fetch entries once to map nicer display names and team slugs
@@ -148,7 +169,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
           if(entries){
             entries.teams.forEach(t=>{ t.drivers.forEach(dr=>{ const s = dr.name.toLowerCase().replace(/[^a-z0-9]+/g,'-'); nameMap[s] = {display: dr.name, teamSlug: t.slug || t.name.toLowerCase().replace(/[^a-z0-9]+/g,'-')}; }); });
           }
-          drivers.slice(0,5).forEach(d=>{
+          drivers.slice(0,10).forEach(d=>{
             const li = document.createElement('li');
             const driverSlug = d.slug;
             let display = d.slug.split('-').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(' ');
@@ -158,15 +179,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
             topDriversEl.appendChild(li);
           });
         }).catch(()=>{
-          drivers.slice(0,5).forEach(d=>{ const li=document.createElement('li'); const display = d.slug.split('-').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(' '); li.textContent = `${display} — ${d.points} p`; topDriversEl.appendChild(li); });
+          drivers.slice(0,10).forEach(d=>{ const li=document.createElement('li'); const display = d.slug.split('-').map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(' '); li.textContent = `${display} — ${d.points} p`; topDriversEl.appendChild(li); });
         });
       }
 
       const topTeamsEl = document.getElementById('topTeams');
       if(topTeamsEl){
+        topTeamsEl.innerHTML = '';
         const teams = Object.entries(stats.teamStats).map(([slug,t])=>({slug,name:slug.replace(/-/g,' '),points: (t && t.allTime && typeof t.allTime.points === 'number') ? t.allTime.points : (t && t.allTime && parseInt(t.allTime.points) || 0)}));
         teams.sort((a,b)=>b.points-a.points);
-        teams.slice(0,5).forEach(t=>{
+        teams.slice(0,10).forEach(t=>{
           const li = document.createElement('li');
           li.innerHTML = `<a href="${sitePath(`/teams/${t.slug}/index.html`)}">${t.name}</a> — ${t.points} p`;
           topTeamsEl.appendChild(li);
@@ -327,7 +349,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
       console.error('Stats load error', err);
       const teamStatsEl = document.getElementById('teamStats');
       const driverStatsEl = document.getElementById('driverStats');
-      const msg = 'Kon statistieken niet laden. Start een lokale server of bekijk de site via GitHub Pages.';
+      const msg = 'Kon statistieken niet laden. Open index.html of bekijk de bestanden in de data/ map.';
       if(teamStatsEl) teamStatsEl.innerHTML = `<p class="muted">${msg}</p>`;
       if(driverStatsEl) driverStatsEl.innerHTML = `<p class="muted">${msg}</p>`;
       const topDriversEl = document.getElementById('topDrivers');
